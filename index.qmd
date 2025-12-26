@@ -1,7 +1,7 @@
 ---
-title: "Machine Learning, 2026."
+title: ""
 output: html_document
-date: "Last updated: `r Sys.Date()`"
+date: ""
 bibliography: "mlmiin.bib"
 link-citations: true 
 csl: apa-6th-edition.csl
@@ -11,13 +11,25 @@ csl: apa-6th-edition.csl
 knitr::opts_chunk$set(echo = TRUE)
 ``` 
 
-![](QR.png){height=350px} ![ ](MochueloCasaCampo.jpg){height=300px}
-
-
 # Machine Learning, 2026.
+
+Last updated: `r Sys.Date()`
 
 [Official Master's Degree in Industrial Engineering + Master's Degree in Smart Industry.](https://www.comillas.edu/en/postgraduate/master-universitario-en-ingenieria-industrial-master-en-industria-inteligente/) 
 [ICAI, Universidad Pontificia Comillas.](https://www.comillas.edu/icai/)
+
+
+![](QR.png){height=350px} ![ ](MochueloCasaCampo.jpg){height=300px}
+
+
+
+# Links  
+
++ This page is at: [https://ml-mic.github.io/MLMIIN_public](https://ml-mic.github.io/MLMIIN_public)
+
+**Bookmark it now!**
+
+
 
 
 
