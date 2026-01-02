@@ -28,6 +28,8 @@ Last updated: `r Sys.Date()`
 
 + [Course GitHub repository](https://github.com/ML-MIC/MLMIIN) 
 
++ [Student setup guide](https://ml-mic.github.io/MLMIIN/00_Setup/MLMIIN26_Student_Setup_Guide.html)
+
 
 # Sessions
 
