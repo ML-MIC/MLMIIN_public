@@ -22,16 +22,14 @@ Last updated: `r Sys.Date()`
 ![](QR.png){height=350px} ![ ](MochueloCasaCampo.jpg){height=300px}
 
 
-
 # Links  
 
-+ This page is at: [https://ml-mic.github.io/MLMIIN_public](https://ml-mic.github.io/MLMIIN_public)
++ This page is at: [https://ml-mic.github.io/MLMIIN/](https://ml-mic.github.io/MLMIIN). **Bookmark it now!**
 
-**Bookmark it now!**
-
-
++ [Course GitHub repository](https://github.com/ML-MIC/MLMIIN) 
 
 
+# Sessions
 
 ## 2026-01-13 Session
 
