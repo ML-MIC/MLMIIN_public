@@ -495,7 +495,7 @@ Do the following:
 
 ## 8.2. Open a notebook
 
-In the VS Code *Explorer* panel (the first icon on the left side bar) navigate to `00_Setup` and you will see the `1_1_Introduction.ipynb` notebook file there. **Do not open it!** 
+In the VS Code *Explorer* panel (the first icon on the left side bar) navigate to `01_Setup` and you will see the `1_1_Introduction.ipynb` notebook file there. **Do not open it!** 
 
 
 :::{.callout-important}
