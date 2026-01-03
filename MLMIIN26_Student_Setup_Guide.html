@@ -123,9 +123,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   <li><a href="#quarto-extension-for-vs-code" id="toc-quarto-extension-for-vs-code" class="nav-link" data-scroll-target="#quarto-extension-for-vs-code">5.2. Quarto extension for VS Code</a></li>
   <li><a href="#using-quarto-to-render-notebooks" id="toc-using-quarto-to-render-notebooks" class="nav-link" data-scroll-target="#using-quarto-to-render-notebooks">5.3. Using Quarto to render notebooks</a></li>
   </ul></li>
-  <li><a href="#get-session-files-from-github-classroom" id="toc-get-session-files-from-github-classroom" class="nav-link" data-scroll-target="#get-session-files-from-github-classroom">6. Get Session Files from GitHub Classroom</a>
+  <li><a href="#get-session-files" id="toc-get-session-files" class="nav-link" data-scroll-target="#get-session-files">6. Get Session Files</a>
   <ul class="collapse">
-  <li><a href="#accept-the-github-classroom-assignment" id="toc-accept-the-github-classroom-assignment" class="nav-link" data-scroll-target="#accept-the-github-classroom-assignment">6.1 Accept the GitHub Classroom assignment</a></li>
   <li><a href="#clone-the-course-repository" id="toc-clone-the-course-repository" class="nav-link" data-scroll-target="#clone-the-course-repository">6.1 Clone the course repository</a>
   <ul class="collapse">
   <li><a href="#using-github-desktop" id="toc-using-github-desktop" class="nav-link" data-scroll-target="#using-github-desktop">6.1.1 Using GitHub Desktop</a></li>
@@ -148,13 +147,12 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   </ul></li>
   <li><a href="#typical-workflow-for-each-session" id="toc-typical-workflow-for-each-session" class="nav-link" data-scroll-target="#typical-workflow-for-each-session">9. Typical Workflow for Each Session</a>
   <ul class="collapse">
-  <li><a href="#preliminaries-get-the-jupyter-server-running-with-docker" id="toc-preliminaries-get-the-jupyter-server-running-with-docker" class="nav-link" data-scroll-target="#preliminaries-get-the-jupyter-server-running-with-docker">8.1 Preliminaries: get the Jupyter server running with Docker</a></li>
-  <li><a href="#update-course-files" id="toc-update-course-files" class="nav-link" data-scroll-target="#update-course-files">8.2 Update course files</a>
+  <li><a href="#update-course-files" id="toc-update-course-files" class="nav-link" data-scroll-target="#update-course-files">9.1 Update course files</a>
   <ul class="collapse">
   <li><a href="#using-github-desktop-1" id="toc-using-github-desktop-1" class="nav-link" data-scroll-target="#using-github-desktop-1">8.2.1. Using GitHub Desktop</a></li>
-  <li><a href="#using-vs-code-1" id="toc-using-vs-code-1" class="nav-link" data-scroll-target="#using-vs-code-1">8.2.2. Using VS Code</a></li>
+  <li><a href="#using-vs-code-1" id="toc-using-vs-code-1" class="nav-link" data-scroll-target="#using-vs-code-1">9.2.2. Using VS Code</a></li>
   </ul></li>
-  <li><a href="#some-tips-about-merge-conflicts" id="toc-some-tips-about-merge-conflicts" class="nav-link" data-scroll-target="#some-tips-about-merge-conflicts">8.3. Some tips about merge conflicts</a></li>
+  <li><a href="#use-the-jupyter-server-running-with-docker" id="toc-use-the-jupyter-server-running-with-docker" class="nav-link" data-scroll-target="#use-the-jupyter-server-running-with-docker">9.3 Use the Jupyter server running with Docker</a></li>
   </ul></li>
   </ul>
 </nav>
@@ -378,6 +376,19 @@ https://www.docker.com/products/docker-desktop/</li>
 <section id="configure-github-desktop" class="level3">
 <h3 class="anchored" data-anchor-id="configure-github-desktop">3.4.1 Configure GitHub Desktop</h3>
 <p>After installing GitHub Desktop, open it and sign in with your GitHub account (use <em>Settings</em>). You can then clone repositories, create new ones, and manage your git projects using the graphical interface.</p>
+<div class="callout callout-style-default callout-important callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Choose the right GitHub account for all git related operations
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Login to your GitHub account and make sure that this is the GtHub account linked to your university email, as requested above. If you have multiple GitHub accounts, make sure you are using the correct one (in taht case you will need to check this for every course session or assignment).</p>
+</div>
+</div>
 </section>
 </section>
 <section id="using-git-in-vs-code" class="level2">
@@ -431,25 +442,14 @@ https://www.docker.com/products/docker-desktop/</li>
 <p>Change <code>html</code> to <code>pdf</code> or other formats as desired. The rendered file will be saved in the same folder as the original notebook. If you run into any issues, please let your instructor know.</p>
 </section>
 </section>
-<section id="get-session-files-from-github-classroom" class="level1">
-<h1>6. Get Session Files from GitHub Classroom</h1>
-<section id="accept-the-github-classroom-assignment" class="level2">
-<h2 class="anchored" data-anchor-id="accept-the-github-classroom-assignment">6.1 Accept the GitHub Classroom assignment</h2>
-<div class="callout callout-style-default callout-important callout-titled">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-Choose the right GitHub account
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<p>Login to your GitHub account and make sure that this is the GtHub account linked to your university email, as requested above. If you have multiple GitHub accounts, make sure you are using the correct one. You will need to check this for every course assignment/session.</p>
-</div>
-</div>
-<p>You should have received a link to the first GitHub Classroom assignment/session for this course from your instructor. Click on that link to accept the assignment.</p>
-</section>
+<section id="get-session-files" class="level1">
+<h1>6. Get Session Files</h1>
+<!-- ## 6.1 Accept the GitHub Classroom assignment -->
+<!-- :::{.callout-important} -->
+<!-- ##### Choose the right GitHub account -->
+<!-- Login to your GitHub account and make sure that this is the GtHub account linked to your university email, as requested above. If you have multiple GitHub accounts, make sure you are using the correct one. You will need to check this for every course assignment/session. -->
+<!-- ::: -->
+<!-- You should have received a link to the first GitHub Classroom assignment/session for this course from your instructor. Click on that link to accept the assignment. -->
 <section id="clone-the-course-repository" class="level2">
 <h2 class="anchored" data-anchor-id="clone-the-course-repository">6.1 Clone the course repository</h2>
 <p>This step depends on the tool you are using: <strong>GitHub Desktop</strong>, <strong>VS Code</strong>, or <strong>git command line</strong>. In either case you will need the course repository URL which is:</p>
@@ -628,141 +628,84 @@ Always save your work before stopping the container
 </section>
 <section id="typical-workflow-for-each-session" class="level1">
 <h1>9. Typical Workflow for Each Session</h1>
-<p>For <em>every course session</em>, you will usually repeat these steps. Your instructirs will remind you to do so at the start of the first few sessions, but eventually it will be your responsibility to remember to do this.</p>
-<section id="preliminaries-get-the-jupyter-server-running-with-docker" class="level2">
-<h2 class="anchored" data-anchor-id="preliminaries-get-the-jupyter-server-running-with-docker">8.1 Preliminaries: get the Jupyter server running with Docker</h2>
-<ol type="1">
-<li><em>Start Docker Desktop</em> (Windows/macOS) → wait until it’s running.</li>
-<li>Open a terminal (macOS) or PowerShell (Windows).</li>
-<li>Go to your course root folder, e.g.:
-<ul>
-<li><p>macOS:</p>
-<div class="sourceCode" id="cb28"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb28-1"><a href="#cb28-1" aria-hidden="true" tabindex="-1"></a><span class="bu">cd</span> ~/ML/MIIN</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div></li>
-<li><p>Windows (PowerShell):</p>
-<div class="sourceCode" id="cb29"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb29-1"><a href="#cb29-1" aria-hidden="true" tabindex="-1"></a><span class="bu">cd</span> C:<span class="dt">\U</span>sers<span class="dt">\&lt;</span>yourname<span class="op">&gt;</span><span class="dt">\M</span>L\MIIN</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div></li>
-</ul></li>
-<li>Start the container: <code>bash      docker run -it --rm -p 8888:8888 -v "$PWD":/wd mlmiin:latest</code></li>
-<li>Open <em>VS Code</em>, open your course root folder <em>MIIN</em> folder (it contains your cloned MIIN as a subfolder).</li>
-</ol>
-</section>
+<p>For <em>every course session</em>, you will usually repeat these steps. Your instructors will remind you to do so at the start of the first few sessions, but eventually it will be your responsibility to remember to do this.</p>
 <section id="update-course-files" class="level2">
-<h2 class="anchored" data-anchor-id="update-course-files">8.2 Update course files</h2>
+<h2 class="anchored" data-anchor-id="update-course-files">9.1 Update course files</h2>
 <div class="callout callout-style-default callout-important callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-Always update your fork before starting the session
+Always update your clone of MIIN before starting the session
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>Make a <code>git pull</code> from the <code>origin</code> and <code>upstream</code> repositories to get the latest course files and keep in sync with your GitHub repo. Instructions follow.</p>
+<p>Make a <code>git pull</code> from the <code>origin</code> repository to get the latest course files. Instructions follow.</p>
 </div>
 </div>
-<p>In your case the upstream repository is the original course repository at</p>
+<p>In your case the <code>origin</code> repository is the original course repository at</p>
 <p><a href="https://github.com/ML-MIC/MLMIIN.git">https://github.com/ML-MIC/MLMIIN.git</a></p>
-<p>When we update the course files (e.g.&nbsp;new notebooks, fixes, etc.) we will push them to that repository, and you will need to pull them into your fork before starting the session. The way to do that depends on how you plan to manage git:</p>
+<p>When we update the course files (e.g.&nbsp;new notebooks, fixes, etc.) we will push them to that repository, and you will need to pull them into your fork before starting the session. The way to do that depends on how you plan to manage git.</p>
+<div class="callout callout-style-default callout-warning callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Warning
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<ul>
+<li><p>If you have made changes in files that have also been modified in the original course repository, you may see <strong>conflicts</strong>. In that case, contact your instructor for help. Also see below some tips to deal with conflicts.</p></li>
+<li><p>First rule: <strong>always make your own copy of the course notebooks!</strong> And for your own experiments remember to use the exclude folder or any other folder outside the <code>MLMIIN</code> folder to avoid modifying original files.</p></li>
+<li><p>Second rule: the <code>exclude</code> folder also provides an easy way to backup files and avoid having them overwritten when you pull updates from the course repository. Just move any file you want to keep into the <code>exclude</code> folder before pulling updates, and move it back afterwards (possibly renaming) if needed.</p></li>
+</ul>
+</div>
+</div>
 <section id="using-github-desktop-1" class="level3">
 <h3 class="anchored" data-anchor-id="using-github-desktop-1">8.2.1. Using GitHub Desktop</h3>
-<p>In <em>GitHub Desktop</em>, make sure that your fork is selected as <em>Current Repository</em>.</p>
+<p>In <em>GitHub Desktop</em>, make sure that your clone is selected as <em>Current Repository</em>.</p>
 <p><img src="./fig/GitHubDesktopCurrentRepo.png" width="50%/"></p>
-<p>Then click on <em>Repository → Open in Terminal</em> and wait for the terminal window to open. When it does, type</p>
-<div class="sourceCode" id="cb30"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb30-1"><a href="#cb30-1" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> pull origin main</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<p>and press <em>Enter</em>. Wait for the operation to complete. Then</p>
-<div class="sourceCode" id="cb31"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb31-1"><a href="#cb31-1" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> merge upstream/main</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<p>And wait for the operation to complete. Finally, type</p>
-<div class="sourceCode" id="cb32"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb32-1"><a href="#cb32-1" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> push origin main</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>Then click on <em>Repository → Open in Terminal</em> and wait for the terminal window to open.</p>
+<p><img src="./fig/GitHubDesktopOpenTerminal.png" width="70%/"></p>
+<p>When it does, type</p>
+<div class="sourceCode" id="cb28"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb28-1"><a href="#cb28-1" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> pull origin main</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <p>and press <em>Enter</em>. Wait for the operation to complete.</p>
-<div class="callout callout-style-default callout-warning callout-titled">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-Warning
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<ul>
-<li>If you have made changes in files that have also been modified in the upstream repository, you may see <strong>merge conflicts</strong>. In that case, contact your instructor for help. Also see below some tips to minimize the chances of conflicts.</li>
-</ul>
-</div>
-</div>
-<div class="callout callout-style-default callout-warning callout-titled">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-Warning
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<ul>
-<li>If you get an error about the <code>upstream</code> remote not existing, it means you have not yet added it. In that case, you can ask your instructor for help. But essentially, you need to open a terminal window and run:</li>
-</ul>
-<div class="sourceCode" id="cb33"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb33-1"><a href="#cb33-1" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> remote add upstream https://github.com/ML-MIC/MLMIIN.git</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</div>
-</div>
 </section>
 <section id="using-vs-code-1" class="level3">
-<h3 class="anchored" data-anchor-id="using-vs-code-1">8.2.2. Using VS Code</h3>
-<section id="add-the-upstream-remote-one-time" class="level4">
-<h4 class="anchored" data-anchor-id="add-the-upstream-remote-one-time">8.2.2.1 Add the upstream remote (one-time)</h4>
-<p>First you will need to add the <em>upstream</em> remote. <strong>But you only need to do this once!</strong> Start by clicking on the <strong>Source Control</strong> icon in the left sidebar. It looks like this</p>
-<p><img src="./fig/VSCodeVersionControlIcon.png" width="7%/"></p>
-<p>Then click on the three dots next to <em>Changes</em> and select <em>Remote → Add Remote…</em> as illustrated below:</p>
-<p><img src="./fig/VSCodeAddRemote01.png" width="70%/"></p>
-<p>You will see a text field at the top like this one:</p>
-<p><img src="./fig/VSCodeAddRemote02.png" width="90%/"></p>
-<p>Enter the URL for the <code>upstream</code> repository, which is</p>
-<p><a href="https://github.com/ML-MIC/MLMIIN.git">https://github.com/ML-MIC/MLMIIN.git</a></p>
-<p>and press Enter. When prompted for the remote name, enter <code>upstream</code> and press Enter again.</p>
-<p><img src="./fig/VSCodeAddRemote03.png" width="90%/"></p>
-</section>
-<section id="sync-with-the-upstream-repo-every-session" class="level4">
-<h4 class="anchored" data-anchor-id="sync-with-the-upstream-repo-every-session">8.2.2.2 Sync with the upstream repo (every session)</h4>
-<p>At the beginning of each session you will need to pull the latest changes from upstream. To do so, click on Terminal → New Terminal to open a terminal window in VS Code.</p>
-<!-- <img src="./fig/VSCodePullUpstream01.png" width=90%/> -->
-<p>When the terminal opens in the bottom panel, make sure that you are located in the <code>MLMIINfrk</code> folder (it should appear in the prompt). Then type</p>
-<div class="sourceCode" id="cb34"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb34-1"><a href="#cb34-1" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> pull origin main</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<p>and press <em>Enter</em>. Wait for the operation to complete. Then</p>
-<div class="sourceCode" id="cb35"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb35-1"><a href="#cb35-1" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> rebase upstream/main</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<p>And wait for the operation to complete. Finally, type</p>
-<div class="sourceCode" id="cb36"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb36-1"><a href="#cb36-1" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> push origin main</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<h3 class="anchored" data-anchor-id="using-vs-code-1">9.2.2. Using VS Code</h3>
+<p>Click on Terminal → New Terminal to open a terminal window in VS Code.</p>
+<p><img src="./fig/VSCodeOpenTerminal.png" width="70%/"></p>
+<p>When the terminal opens in the bottom panel, make sure that you are located in the <code>MLMIIN</code> folder (it should appear in the prompt). Then type</p>
+<div class="sourceCode" id="cb29"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb29-1"><a href="#cb29-1" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> pull origin main</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <p>and press <em>Enter</em>. Wait for the operation to complete.</p>
-<div class="callout callout-style-default callout-warning callout-titled">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-Warning
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<p>If you have made changes in files that have also been modified in the upstream repository, you may see <strong>merge conflicts</strong>. In that case, contact your instructor for help. Also see below some tips to minimize the chances of conflicts.</p>
-</div>
-</div>
 </section>
 </section>
-</section>
-<section id="some-tips-about-merge-conflicts" class="level2">
-<h2 class="anchored" data-anchor-id="some-tips-about-merge-conflicts">8.3. Some tips about merge conflicts</h2>
-<div class="callout callout-style-default callout-important callout-titled">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-Again: Always make your own copy of the course notebooks!
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<p>We said it before, but this is really the best way to avoid merge conflicts: <strong>make a copy of the course notebooks</strong> to avoid modifying the original files.</p>
-</div>
-</div>
+<section id="use-the-jupyter-server-running-with-docker" class="level2">
+<h2 class="anchored" data-anchor-id="use-the-jupyter-server-running-with-docker">9.3 Use the Jupyter server running with Docker</h2>
+<ol type="1">
+<li><p><em>Start Docker Desktop</em> (Windows/macOS) → wait until it’s running.</p></li>
+<li><p>Open a terminal (macOS) or PowerShell (Windows).</p></li>
+<li><p>Go to the MIIN clone of the course repository inside your course root folder, e.g.:</p>
+<ul>
+<li><p>macOS:</p>
+<div class="sourceCode" id="cb30"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb30-1"><a href="#cb30-1" aria-hidden="true" tabindex="-1"></a><span class="bu">cd</span> ~/ML/MIIN</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div></li>
+<li><p>Windows (PowerShell):</p>
+<div class="sourceCode" id="cb31"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb31-1"><a href="#cb31-1" aria-hidden="true" tabindex="-1"></a><span class="bu">cd</span> C:<span class="dt">\U</span>sers<span class="dt">\&lt;</span>yourname<span class="op">&gt;</span><span class="dt">\M</span>L\MIIN</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div></li>
+</ul></li>
+<li><p>Start the container: <code>bash      docker run -it --rm -p 8888:8888 -v "$PWD":/wd fsansegundo/mlmiin:2026V01</code> If the container needs to change your instructors will let you know and provide updated instructions.</p></li>
+<li><p>Open VS Code and connect to the Jupyter server as described in section 8 above.</p></li>
+<li><p>Open the MIIN folder in VS Code if not already opened.</p></li>
+<li><p>If needed, make a copy of the notebook you will work on. <strong>Do not edit the original file in the <code>MLMIIN</code> folder!</strong></p></li>
+<li><p>Start working in <strong>your copy</strong> of the notebook files.</p></li>
+<li><p>At the end of the session, remember to:</p>
+<ul>
+<li>save your work and</li>
+<li>stop the Jupyter server and Docker container as described in section 8.4 above.</li>
+</ul></li>
+</ol>
 </section>
 </section>
 

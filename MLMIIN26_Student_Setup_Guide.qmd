@@ -254,6 +254,13 @@ If you prefer a graphical interface to manage git repositories, you can install 
 
 After installing GitHub Desktop, open it and sign in with your GitHub account (use *Settings*). You can then clone repositories, create new ones, and manage your git projects using the graphical interface.
 
+:::{.callout-important}
+
+##### Choose the right GitHub account for all git related operations
+
+Login to your GitHub account and make sure that this is the GtHub account linked to your university email, as requested above. If you have multiple GitHub accounts, make sure you are using the correct one (in taht case you will need to check this for every course session or assignment).
+
+:::
 
 ## 3.5. Using git in VS Code
 
@@ -321,22 +328,19 @@ quarto render your_notebook.ipynb --to html
 Change `html` to `pdf` or other formats as desired. The rendered file will be saved in the same folder as the original notebook. If you run into any issues, please let your instructor know.
 
 
-# 6. Get Session Files from GitHub Classroom
+# 6. Get Session Files
   
-## 6.1 Accept the GitHub Classroom assignment
+<!-- ## 6.1 Accept the GitHub Classroom assignment -->
 
-:::{.callout-important}
+<!-- :::{.callout-important} -->
 
-##### Choose the right GitHub account
+<!-- ##### Choose the right GitHub account -->
 
-Login to your GitHub account and make sure that this is the GtHub account linked to your university email, as requested above. If you have multiple GitHub accounts, make sure you are using the correct one. You will need to check this for every course assignment/session.
+<!-- Login to your GitHub account and make sure that this is the GtHub account linked to your university email, as requested above. If you have multiple GitHub accounts, make sure you are using the correct one. You will need to check this for every course assignment/session. -->
 
-:::
+<!-- ::: -->
 
-You should have received a link to the first GitHub Classroom assignment/session for this course from your instructor. Click on that link to accept the assignment.
-
-
-
+<!-- You should have received a link to the first GitHub Classroom assignment/session for this course from your instructor. Click on that link to accept the assignment. -->
 
 
 
@@ -423,8 +427,6 @@ Your branch is up to date with 'origin/main'.
 
 nothing to commit, working tree clean
 ```
-
-
 
 
 # 7. Get and Run the Course Docker Image
@@ -576,16 +578,75 @@ This is something you will need to do at the end of each course session.
 :::
 
 
-
 # 9. Typical Workflow for Each Session
 
-For *every course session*, you will usually repeat these steps. Your instructirs will remind you to do so at the start of the first few sessions, but eventually it will be your responsibility to remember to do this.
+For *every course session*, you will usually repeat these steps. Your instructors will remind you to do so at the start of the first few sessions, but eventually it will be your responsibility to remember to do this.
 
-## 8.1 Preliminaries: get the Jupyter server running with Docker
+## 9.1 Update course files
+
+:::{.callout-important}
+
+##### Always update your clone of MIIN before starting the session
+
+Make a `git pull` from the `origin` repository to get the latest course files. Instructions follow.
+
+:::
+
+In your case the `origin` repository is the original course repository at   
+
+[https://github.com/ML-MIC/MLMIIN.git](https://github.com/ML-MIC/MLMIIN.git) 
+
+When we update the course files (e.g. new notebooks, fixes, etc.) we will push them to that repository, and you will need to pull them into your fork before starting the session. The way to do that depends on how you plan to manage git.
+
+:::{.callout-warning}
+
++ If you have made changes in files that have also been modified in the original course repository, you may see **conflicts**. In that case, contact your instructor for help. Also see below some tips to deal with conflicts.
+
++ First rule: **always make your own copy of the course notebooks!** And for your own experiments remember to use the exclude folder or any other folder outside the `MLMIIN` folder to avoid modifying  original files. 
+
++ Second rule: the `exclude` folder also provides an easy way to backup files and avoid having them overwritten when you pull updates from the course repository. Just move any file you want to keep into the `exclude` folder before pulling updates, and move it back afterwards (possibly renaming)
+if needed.
+
+:::
+
+
+### 8.2.1. Using GitHub Desktop
+   
+In *GitHub Desktop*, make sure that your clone is selected as *Current Repository*. 
+
+<img src="./fig/GitHubDesktopCurrentRepo.png" width=50%/>
+
+Then click on *Repository → Open in Terminal* and wait for the terminal window to open. 
+
+<img src="./fig/GitHubDesktopOpenTerminal.png" width=70%/>
+
+When it does, type 
+
+```bash
+git pull origin main
+```
+and press *Enter*. Wait for the operation to complete. 
+
+### 9.2.2. Using VS Code
+
+Click on Terminal → New Terminal to open a terminal window in VS Code. 
+
+<img src="./fig/VSCodeOpenTerminal.png" width=70%/>
+
+
+When the terminal opens in the bottom panel, make sure that you are located in the `MLMIIN` folder (it should appear in the prompt). Then type
+
+```bash
+git pull origin main
+```
+and press *Enter*. Wait for the operation to complete. 
+
+
+## 9.3 Use the Jupyter server running with Docker
 
 1. *Start Docker Desktop* (Windows/macOS) → wait until it’s running.
 2. Open a terminal (macOS) or PowerShell (Windows).
-3. Go to your course root folder, e.g.:
+3. Go to the MIIN clone of the course repository inside your course root folder, e.g.:
    - macOS:
      ```bash
      cd ~/ML/MIIN
@@ -596,132 +657,21 @@ For *every course session*, you will usually repeat these steps. Your instructir
      ```
 4. Start the container:
      ```bash
-     docker run -it --rm -p 8888:8888 -v "$PWD":/wd mlmiin:latest
+     docker run -it --rm -p 8888:8888 -v "$PWD":/wd fsansegundo/mlmiin:2026V01
      ```
-5. Open *VS Code*, open your course root folder *MIIN* folder (it contains your cloned MIIN as a subfolder).
+    If the container needs to change your instructors will let you know and provide updated instructions.
+     
+5. Open VS Code and connect to the Jupyter server as described in section 8 above.
 
+6. Open the MIIN folder in VS Code if not already opened.
 
+7. If needed, make a copy of the notebook you will work on. **Do not edit the original file in the `MLMIIN` folder!**
 
-## 8.2 Update course files
+8. Start working in **your copy** of the notebook files.
 
-:::{.callout-important}
-
-##### Always update your fork before starting the session
-
-Make a `git pull` from the `origin` and `upstream` repositories to get the latest course files and keep in sync with your GitHub repo. Instructions follow.
-:::
-
-In your case the upstream repository is the original course repository at   
-
-[https://github.com/ML-MIC/MLMIIN.git](https://github.com/ML-MIC/MLMIIN.git) 
-
-When we update the course files (e.g. new notebooks, fixes, etc.) we will push them to that repository, and you will need to pull them into your fork before starting the session. The way to do that depends on how you plan to manage git:
-
-### 8.2.1. Using GitHub Desktop
-   
-In *GitHub Desktop*, make sure that your fork is selected as *Current Repository*. 
-
-<img src="./fig/GitHubDesktopCurrentRepo.png" width=50%/>
-
-Then click on *Repository → Open in Terminal* and wait for the terminal window to open. When it does, type 
-```bash
-git pull origin main
-```
-and press *Enter*. Wait for the operation to complete. Then 
-
-```bash
-git merge upstream/main
-```
-And wait for the operation to complete. Finally, type 
-```bash
-git push origin main
-```
-and press *Enter*. Wait for the operation to complete. 
-
-:::{.callout-warning}
-
-+ If you have made changes in files that have also been modified in the upstream repository, you may see **merge conflicts**. In that case, contact your instructor for help. Also see below some tips to minimize the chances of conflicts.
-
-:::
-
-
-:::{.callout-warning}
-
-+ If you get an error about the `upstream` remote not existing, it means you have not yet added it. In that case, you can ask your instructor for help. But essentially, you need to open a terminal window and run:
-
-```bash
-git remote add upstream https://github.com/ML-MIC/MLMIIN.git
-```
-
-:::
-
-
-### 8.2.2. Using VS Code
-   
-#### 8.2.2.1 Add the upstream remote (one-time)
-   
-First you will need to add the *upstream* remote. **But you only need to do this once!** Start by clicking on the **Source Control** icon in the left sidebar. It looks like this
-
-<img src="./fig/VSCodeVersionControlIcon.png" width=7%/>
-
-Then click on the three dots next to *Changes* and select *Remote → Add Remote...* as illustrated below:
-
-<img src="./fig/VSCodeAddRemote01.png" width=70%/>
-   
-You will see a text field at the top like this one:
-
-<img src="./fig/VSCodeAddRemote02.png" width=90%/>
-
-Enter the URL for the `upstream` repository, which is 
-
-[https://github.com/ML-MIC/MLMIIN.git](https://github.com/ML-MIC/MLMIIN.git) 
-
-and press Enter. When prompted for the remote name, enter `upstream` and press Enter again.
-
-<img src="./fig/VSCodeAddRemote03.png" width=90%/>
-
-
-#### 8.2.2.2 Sync with the upstream repo  (every session)
-
-At the beginning of each session you will need to pull the latest changes from upstream. To do so, 
-click on Terminal → New Terminal to open a terminal window in VS Code. 
-
-<!-- <img src="./fig/VSCodePullUpstream01.png" width=90%/> -->
-
-When the terminal opens in the bottom panel, make sure that you are located in the `MLMIINfrk` folder (it should appear in the prompt). Then type
-
-```bash
-git pull origin main
-```
-and press *Enter*. Wait for the operation to complete. Then 
-
-```bash
-git rebase upstream/main
-```
-And wait for the operation to complete. Finally, type 
-```bash
-git push origin main
-```
-and press *Enter*. Wait for the operation to complete. 
-
-
-:::{.callout-warning}
-If you have made changes in files that have also been modified in the upstream repository, you may see **merge conflicts**. In that case, contact your instructor for help. Also see below some tips to minimize the chances of conflicts.
-:::
-
-
-## 8.3. Some tips about  merge conflicts
-
-:::{.callout-important}
-
-##### Again: Always make your own copy of the course notebooks!
-
-We said it before, but this is really the best way to avoid merge conflicts: **make a copy of the course notebooks** to avoid modifying the original files.
-
-:::
-
-
-
+9. At the end of the session, remember to:
+    + save your work and 
+    + stop the Jupyter server and Docker container as described in section 8.4 above.
 
 
 
