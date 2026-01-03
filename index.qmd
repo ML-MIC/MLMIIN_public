@@ -19,7 +19,7 @@ Last updated: `r Sys.Date()`
 [ICAI, Universidad Pontificia Comillas.](https://www.comillas.edu/icai/)
 
 
-![](QR.png){height=350px} ![ ](MochueloCasaCampo.jpg){height=300px}
+![](fig/QR.png){height=350px} ![ ](fig/MochueloCasaCampo.jpg){height=300px}
 
 
 # Links  
@@ -28,7 +28,7 @@ Last updated: `r Sys.Date()`
 
 + [Course GitHub repository](https://github.com/ML-MIC/MLMIIN) 
 
-+ [Student setup guide](https://ml-mic.github.io/MLMIIN/00_Setup/MLMIIN26_Student_Setup_Guide.html)
++ [Student setup guide](https://ml-mic.github.io/MLMIIN_public/MLMIIN26_Student_Setup_Guide.html)
 
 
 # Sessions
