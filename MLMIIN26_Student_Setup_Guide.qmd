@@ -607,6 +607,8 @@ When we update the course files (e.g. new notebooks, fixes, etc.) we will push t
 + Second rule: the `exclude` folder also provides an easy way to backup files and avoid having them overwritten when you pull updates from the course repository. Just move any file you want to keep into the `exclude` folder before pulling updates, and move it back afterwards (possibly renaming)
 if needed.
 
++ Third rule: when you create your own copies of the files (recommended), and then you run `git status` or use GitHub Desktop or VS Code git integration, you will see that those copies are untracked files. You should ignore them: do not add/commit/push them to your repository. Only the instructors will modify the original files in the `MLMIIN` folder.
+
 :::
 
 
