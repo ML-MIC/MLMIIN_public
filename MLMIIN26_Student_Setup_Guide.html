@@ -210,17 +210,6 @@ Important Notice
 <p>Make sure you read these notes at least once before starting the setup process. We will be going over this setup instructions in the course first session. So the goal of reading this document now is to familiarize yourself with the steps involved. <strong>If you are certain</strong> that you can proceed on your own (familiarity with Git and Docker is required), you can start the setup right away. But if you have any questions or concerns, please wait until the first session where we will go through the setup together and help you with any issues.</p>
 </div>
 </div>
-<!--0. Prerequisites
-1. Installing **Docker** (macOS & Windows)
-2. Installing **VS Code** and required extensions
-3. Install git and GitHub Desktop.
-4. Getting the **course files**
-5. **Building** the course Docker image
-6. **Running** the container
-7. Connecting **VS Code to the Jupyter kernel** running in Docker
-8. Installing **LaTeX** (outside the container) for PDF export.
-9. Installing **Quarto** & Quarto extension for VS Code (outside the container).
-10. Choosing a good text editor.-->
 <hr>
 <section id="prerequisites" class="level2">
 <h2 class="anchored" data-anchor-id="prerequisites">0. Prerequisites</h2>
@@ -321,7 +310,6 @@ https://www.docker.com/products/docker-desktop/</li>
 <li><a href="https://marketplace.visualstudio.com/items?itemName=ms-python.python">Python</a></li>
 <li><a href="https://marketplace.visualstudio.com/items?itemName=ms-toolsai.jupyter">Jupyter</a></li>
 <li><a href="https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-containers">Container Tools</a></li>
-<li><a href="https://marketplace.visualstudio.com/items?itemName=quarto.quarto">Quarto</a> (optional, for Quarto support)</li>
 </ul>
 <p>Make sure the extensions are <strong>enabled</strong> (no “Enable” button visible).</p>
 </section>
@@ -444,12 +432,6 @@ Choose the right GitHub account for all git related operations
 </section>
 <section id="get-session-files" class="level1">
 <h1>6. Get Session Files</h1>
-<!-- ## 6.1 Accept the GitHub Classroom assignment -->
-<!-- :::{.callout-important} -->
-<!-- ##### Choose the right GitHub account -->
-<!-- Login to your GitHub account and make sure that this is the GtHub account linked to your university email, as requested above. If you have multiple GitHub accounts, make sure you are using the correct one. You will need to check this for every course assignment/session. -->
-<!-- ::: -->
-<!-- You should have received a link to the first GitHub Classroom assignment/session for this course from your instructor. Click on that link to accept the assignment. -->
 <section id="clone-the-course-repository" class="level2">
 <h2 class="anchored" data-anchor-id="clone-the-course-repository">6.1 Clone the course repository</h2>
 <p>This step depends on the tool you are using: <strong>GitHub Desktop</strong>, <strong>VS Code</strong>, or <strong>git command line</strong>. In either case you will need the course repository URL which is:</p>
@@ -501,7 +483,6 @@ Choose the right GitHub account for all git related operations
 </section>
 <section id="get-and-run-the-course-docker-image" class="level1">
 <h1>7. Get and Run the Course Docker Image</h1>
-<!-- Depending on your OS and hardware architecture, this can be a long process (expect up to 20–40 minutes). But you only need to **build the image once** (unless the course Dockerfile changes). -->
 <div class="callout callout-style-default callout-important callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
