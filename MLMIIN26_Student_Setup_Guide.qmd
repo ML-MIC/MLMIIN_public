@@ -13,7 +13,7 @@ format:
     fig_height: 5
     highlight: tango
 
-date: "January 2026"
+# date: "January 2026"
 ---
 
 ```{r setup, include=FALSE}  
@@ -24,7 +24,7 @@ knitr::opts_chunk$set(echo = TRUE)
 
 ##### Introduction
 
-In this course you will run Python code **inside a Docker container**, and connect to it from **Visual Studio Code (VS Code)** using the Jupyter extension. We will also install some additional tools on your host machine (outside the container) to work with git repositories, support PDF export and Quarto documents. This guide walks you through the steps to set up your environment. In case of doubt, ask the instructor **before proceeding!**
+In this course you will run *Python* code using a *Jupyter notebook* server *inside a Docker container*, and connect to it from *Visual Studio Code (VS Code)*. We will also install some additional tools on your host machine (outside the container) to work with git repositories, support PDF export and Quarto publishing services. This guide walks you through the steps to set up your environment. In case of doubt, ask the instructors **before proceeding!**
 :::
 
 
@@ -45,18 +45,31 @@ Make sure you read these notes at least once before starting the setup process. 
   - 8 GB RAM (16 GB recommended); if you have less than 8 GB, let us know.
   - 10–20 GB free disk space. If you have less than 20 GB of free disk space, let us know.
   - Operating system:
-    - **MacOS** (Apple Silicon is assumed; if you have an Intel Mac, let us know)
-    - **Windows 11** (64-bit)
+    - *MacOS* (Apple Silicon is assumed; if you have an Intel Mac, let us know)
+    - *Windows 11* (64-bit)
     - If you use Linux, let us know.
 
 ### 0.2. Create a course folder
 
-Decide on a folder where you will keep everything related to this course, for example:
+Decide on a folder where you will keep everything related to this course. It can be something for example like:
 
-- On macOS: `/Users/<yourname>/MIIN/ML`
-- On Windows: `C:\Users\<yourname>\MIIN\ML`
+- On macOS: `/Users/<yourname>/Master/ML`
+- On Windows: `C:\Users\<yourname>\Master\ML`
 
-In these examples the MIIN folder refers to a folder where you keep all your MIIN-related files, and the ML folder is specifically for this course. The MIIN folder may be located deeper in your user folder. We’ll call this folder ML your **course root**.
+In these examples the `Master` folder refers to a folder where you keep all your MII-MIINT master's degree-related files, and the `ML` folder is specifically for this course. The `Master` folder may be located deeper in your user folder. In this setup guide we will call this `ML` folder your **course root**. You can give the course root any name you want, but don't change the names of its subfolders that we will be creating below (like `MIIN` in the diagram below).
+
+```{mermaid}
+graph TD
+    User["You user folder"] --> MoreFolders["... possibly several folder levels..."]
+    MoreFolders --> Master["Master's degree folder"]
+    Master --> ML["`**ML (Course Root)**`"]
+    Master --> OtherMasters["Other master's degree courses stuff"]
+    ML --> MIIN["`**MIIN**`"]
+    ML --> Other["Other Machine Learning course stuff"]
+    
+    style ML fill:#d6b588,stroke:#333,stroke-width:2px
+    style MIIN fill:#d6b588,stroke:#333,stroke-width:2px
+```
 
 
 ## 1. Install Docker
@@ -324,13 +337,17 @@ This step depends on the tool you are using: **GitHub Desktop**, **VS Code**, or
 ```bash
 https://github.com/ML-MIC/MLMIIN
 ```
+
+Choose the instructions that match your preferred git management tool below.
+
+
 ### 6.1.1 Using GitHub Desktop
 
 Open *GitHub Desktop* and go to *File → Clone Repository...*. See the figure for the window that opens:
 
 <img src="./fig/GitHubClone01.png" width=70% align="center"/>
 
-Make sure URL tab is selected. Paste the course repository URL above in the *Repository URL* field. Also make sure that the *Local Path* field points to your *course root* folder (see section 0.2 above). Finally click on *Clone*.
+Make sure URL tab is selected. Paste the course repository URL above in the *Repository URL* field. Also make sure that the *Local Path* field points to your *course root* folder (the repository MIIN will be cloned as a subfolder of your course root folder, see the diagram in section 0.2 above). Finally click on *Clone* and wait until the cloning is completed. You can now open the folder in VS Code (and answer Yes about trusting the authors).
 
 ### 6.1.2 Using VS Code
 
@@ -342,7 +359,7 @@ Next, paste **the URL of the course repo** and press Enter.
 
 <img src="./fig/GitHubClone03.png" width=70% align="center"/>
 
-When prompted, **choose your course root** as the local *repository destination* (the repository will be cloned as a subfolder of your course root folder). Wait until the cloning is completed. You can then open the folder in VS Code (and answer Yes about trusting the authors).
+When prompted, **choose your course root folder** (the one we called ML) as the local *repository destination* (the repository MIIN will be cloned as a subfolder of your course root folder, see the diagram in section 0.2 above). Wait until the cloning is completed. You can now open the folder in VS Code (and answer Yes about trusting the authors).
 
 ### 6.1.3 Using git command line
 
@@ -351,7 +368,7 @@ Open a terminal (macOS) or PowerShell (Windows). Use `cd` to navigate to your **
 ```bash
 git clone   https://github.com/ML-MIC/MLMIIN
 ```
-This will create a subfolder called `MLMIIN` inside your course root folder, containing the course files. Wait until the cloning is completed.
+This will create a subfolder called `MLMIIN` inside your course root folder, containing the course files. Wait until the cloning is completed. You can now open the folder in VS Code (and answer Yes about trusting the authors).
 
 
 ## 6.2. The .gitignore file and excluded folders
@@ -359,6 +376,7 @@ This will create a subfolder called `MLMIIN` inside your course root folder, con
 Your clone of the course repository includes a `.gitignore` file that excludes certain folders and files from being tracked by git. This is important to avoid committing large files (such as large datasets) or any files that are not relevant to the course. 
 
 In particular, the `.gitignore` file excludes:
+
 + A subfolder called `data` that we will use to store datasets.
 + A subfolder called `exclude` that you can use to store any files you do not want git to track. For example, you can use a text file in that folder to store sensitive information such as API keys, passwords, etc. that you do not want to commit to your repository.
 
@@ -366,7 +384,7 @@ The files in these folders are still available to your notebooks when you run th
 
 Of course any file in your *course root* folder but outside your cloned repository folder `MLMIIN` will also be ignored by git.
 
-Go ahead and create these folders now inside your cloned repository folder `MLMIIN`). Open a terminal (macOS) or PowerShell (Windows), navigate to your cloned repository folder, and run these commands in order:
+Go ahead and create these folders now inside your cloned repository folder (`MLMIIN`). Open a terminal (macOS) or PowerShell (Windows), navigate to your cloned repository folder, and run these commands in order:
 
 ```bash
 mkdir data exclude
@@ -394,6 +412,7 @@ git status
 ```
 
 and verify that those folders and the `emptyfile.txt` do not appear in the list of untracked files. If you have followed these instructions up to this point, git should answer 
+
 ```bash
 On branch main
 Your branch is up to date with 'origin/main'.
@@ -409,7 +428,7 @@ nothing to commit, working tree clean
 
 ##### Choose the right folder to run the container from
 
-**You should always run the container from your course root folder**. This ensures that Docker can see all the subfolders we will need to access. The dockerfile and the run command are designed to mount the course root folder into the container at a folder called `/wd` (work directory).
+**You should always run the container from the `MIIN` clone folder**. This ensures that Docker can see all the subfolders we will need to access. The dockerfile and the run command are designed to mount the `MIIN` folder into a (virtual) folder *inside* the container called `/wd` (work directory).
 
 Additionally, this keeps the container isolated from other folders on your computer, which is a good security practice.
 
@@ -421,7 +440,7 @@ Additionally, this keeps the container isolated from other folders on your compu
 In *Terminal* for MacOS o or *PowerShell* for Windows run the following command to download the pre-built Docker image for the course from Docker Hub:
 
 ```bash
-docker pull fsansegundo/mlmiin:latest
+docker pull mlmiin/mlmiin:2026V01
 ```
 
 and wait until the download ends. This is a several gigabytes download, so it may take a while depending on your internet connection speed.
@@ -432,7 +451,7 @@ and wait until the download ends. This is a several gigabytes download, so it ma
 In *Terminal* for MacOS o or *PowerShell* for Windows,  <span style="color:red; display:inline;font-weight:bold;">and from the MLMIIN repository folder</span>, run the following command to start the container and the Jupyter kernel inside it.
 
 ```bash
-docker run -it --rm -p 8888:8888 -v "$PWD":/wd fsansegundo/mlmiin:2026V01
+docker run -it --rm -p 8888:8888 -v "$PWD":/wd mlmiin/mlmiin:2026V01
 ```
 
 In the terminal, you should see Jupyter starting and eventually a line like:
@@ -630,8 +649,9 @@ and press *Enter*. Wait for the operation to complete.
      cd C:\Users\<yourname>\ML\MIIN
      ```
 4. Start the container:
+
      ```bash
-     docker run -it --rm -p 8888:8888 -v "$PWD":/wd fsansegundo/mlmiin:2026V01
+     docker run -it --rm -p 8888:8888 -v "$PWD":/wd mlmiin/mlmiin:2026V01
      ```
     If the container needs to change your instructors will let you know and provide updated instructions.
      

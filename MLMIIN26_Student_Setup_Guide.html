@@ -6,7 +6,6 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="dcterms.date" content="2026-01-01">
 
 <title>MLMIIN 2026 – Student Setup Guide</title>
 <style>
@@ -70,6 +69,9 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <script src="MLMIIN26_Student_Setup_Guide_files/libs/bootstrap/bootstrap.min.js"></script>
 <link href="MLMIIN26_Student_Setup_Guide_files/libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
 <link href="MLMIIN26_Student_Setup_Guide_files/libs/bootstrap/bootstrap-81267100e462c21b3d6c0d5bf76a3417.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script src="MLMIIN26_Student_Setup_Guide_files/libs/quarto-diagram/mermaid.min.js"></script>
+<script src="MLMIIN26_Student_Setup_Guide_files/libs/quarto-diagram/mermaid-init.js"></script>
+<link href="MLMIIN26_Student_Setup_Guide_files/libs/quarto-diagram/mermaid.css" rel="stylesheet">
 
 
 </head>
@@ -169,12 +171,6 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <div class="quarto-title-meta">
 
     
-    <div>
-    <div class="quarto-title-meta-heading">Published</div>
-    <div class="quarto-title-meta-contents">
-      <p class="date">January 1, 2026</p>
-    </div>
-  </div>
   
     
   </div>
@@ -194,7 +190,7 @@ Introduction
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>In this course you will run Python code <strong>inside a Docker container</strong>, and connect to it from <strong>Visual Studio Code (VS Code)</strong> using the Jupyter extension. We will also install some additional tools on your host machine (outside the container) to work with git repositories, support PDF export and Quarto documents. This guide walks you through the steps to set up your environment. In case of doubt, ask the instructor <strong>before proceeding!</strong></p>
+<p>In this course you will run <em>Python</em> code using a <em>Jupyter notebook</em> server <em>inside a Docker container</em>, and connect to it from <em>Visual Studio Code (VS Code)</em>. We will also install some additional tools on your host machine (outside the container) to work with git repositories, support PDF export and Quarto publishing services. This guide walks you through the steps to set up your environment. In case of doubt, ask the instructors <strong>before proceeding!</strong></p>
 </div>
 </div>
 <div class="callout callout-style-default callout-important callout-titled">
@@ -222,8 +218,8 @@ Important Notice
 <li>10–20 GB free disk space. If you have less than 20 GB of free disk space, let us know.</li>
 <li>Operating system:
 <ul>
-<li><strong>MacOS</strong> (Apple Silicon is assumed; if you have an Intel Mac, let us know)</li>
-<li><strong>Windows 11</strong> (64-bit)</li>
+<li><em>MacOS</em> (Apple Silicon is assumed; if you have an Intel Mac, let us know)</li>
+<li><em>Windows 11</em> (64-bit)</li>
 <li>If you use Linux, let us know.</li>
 </ul></li>
 </ul></li>
@@ -231,12 +227,33 @@ Important Notice
 </section>
 <section id="create-a-course-folder" class="level3">
 <h3 class="anchored" data-anchor-id="create-a-course-folder">0.2. Create a course folder</h3>
-<p>Decide on a folder where you will keep everything related to this course, for example:</p>
+<p>Decide on a folder where you will keep everything related to this course. It can be something for example like:</p>
 <ul>
-<li>On macOS: <code>/Users/&lt;yourname&gt;/MIIN/ML</code></li>
-<li>On Windows: <code>C:\Users\&lt;yourname&gt;\MIIN\ML</code></li>
+<li>On macOS: <code>/Users/&lt;yourname&gt;/Master/ML</code></li>
+<li>On Windows: <code>C:\Users\&lt;yourname&gt;\Master\ML</code></li>
 </ul>
-<p>In these examples the MIIN folder refers to a folder where you keep all your MIIN-related files, and the ML folder is specifically for this course. The MIIN folder may be located deeper in your user folder. We’ll call this folder ML your <strong>course root</strong>.</p>
+<p>In these examples the <code>Master</code> folder refers to a folder where you keep all your MII-MIINT master’s degree-related files, and the <code>ML</code> folder is specifically for this course. The <code>Master</code> folder may be located deeper in your user folder. In this setup guide we will call this <code>ML</code> folder your <strong>course root</strong>. You can give the course root any name you want, but don’t change the names of its subfolders that we will be creating below (like <code>MIIN</code> in the diagram below).</p>
+<div class="cell" data-layout-align="default">
+<div class="cell-output-display">
+<div>
+<p></p><figure class="figure"><p></p>
+<div>
+<pre class="mermaid mermaid-js">graph TD
+    User["You user folder"] --&gt; MoreFolders["... possibly several folder levels..."]
+    MoreFolders --&gt; Master["Master's degree folder"]
+    Master --&gt; ML["`**ML (Course Root)**`"]
+    Master --&gt; OtherMasters["Other master's degree courses stuff"]
+    ML --&gt; MIIN["`**MIIN**`"]
+    ML --&gt; Other["Other Machine Learning course stuff"]
+    
+    style ML fill:#d6b588,stroke:#333,stroke-width:2px
+    style MIIN fill:#d6b588,stroke:#333,stroke-width:2px
+</pre>
+</div>
+<p></p></figure><p></p>
+</div>
+</div>
+</div>
 </section>
 </section>
 <section id="install-docker" class="level2">
@@ -436,11 +453,12 @@ Choose the right GitHub account for all git related operations
 <h2 class="anchored" data-anchor-id="clone-the-course-repository">6.1 Clone the course repository</h2>
 <p>This step depends on the tool you are using: <strong>GitHub Desktop</strong>, <strong>VS Code</strong>, or <strong>git command line</strong>. In either case you will need the course repository URL which is:</p>
 <div class="sourceCode" id="cb15"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb15-1"><a href="#cb15-1" aria-hidden="true" tabindex="-1"></a><span class="ex">https://github.com/ML-MIC/MLMIIN</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>Choose the instructions that match your preferred git management tool below.</p>
 <section id="using-github-desktop" class="level3">
 <h3 class="anchored" data-anchor-id="using-github-desktop">6.1.1 Using GitHub Desktop</h3>
 <p>Open <em>GitHub Desktop</em> and go to <em>File → Clone Repository…</em>. See the figure for the window that opens:</p>
 <p><img src="./fig/GitHubClone01.png" width="70%" align="center"></p>
-<p>Make sure URL tab is selected. Paste the course repository URL above in the <em>Repository URL</em> field. Also make sure that the <em>Local Path</em> field points to your <em>course root</em> folder (see section 0.2 above). Finally click on <em>Clone</em>.</p>
+<p>Make sure URL tab is selected. Paste the course repository URL above in the <em>Repository URL</em> field. Also make sure that the <em>Local Path</em> field points to your <em>course root</em> folder (the repository MIIN will be cloned as a subfolder of your course root folder, see the diagram in section 0.2 above). Finally click on <em>Clone</em> and wait until the cloning is completed. You can now open the folder in VS Code (and answer Yes about trusting the authors).</p>
 </section>
 <section id="using-vs-code" class="level3">
 <h3 class="anchored" data-anchor-id="using-vs-code">6.1.2 Using VS Code</h3>
@@ -448,22 +466,26 @@ Choose the right GitHub account for all git related operations
 <p><img src="./fig/GitHubClone02.png" width="70%" align="center"></p>
 <p>Next, paste <strong>the URL of the course repo</strong> and press Enter.</p>
 <p><img src="./fig/GitHubClone03.png" width="70%" align="center"></p>
-<p>When prompted, <strong>choose your course root</strong> as the local <em>repository destination</em> (the repository will be cloned as a subfolder of your course root folder). Wait until the cloning is completed. You can then open the folder in VS Code (and answer Yes about trusting the authors).</p>
+<p>When prompted, <strong>choose your course root folder</strong> (the one we called ML) as the local <em>repository destination</em> (the repository MIIN will be cloned as a subfolder of your course root folder, see the diagram in section 0.2 above). Wait until the cloning is completed. You can now open the folder in VS Code (and answer Yes about trusting the authors).</p>
 </section>
 <section id="using-git-command-line" class="level3">
 <h3 class="anchored" data-anchor-id="using-git-command-line">6.1.3 Using git command line</h3>
 <p>Open a terminal (macOS) or PowerShell (Windows). Use <code>cd</code> to navigate to your <strong>course root</strong> folder (see section 0.2 above). Then run:</p>
 <div class="sourceCode" id="cb16"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb16-1"><a href="#cb16-1" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> clone   https://github.com/ML-MIC/MLMIIN</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<p>This will create a subfolder called <code>MLMIIN</code> inside your course root folder, containing the course files. Wait until the cloning is completed.</p>
+<p>This will create a subfolder called <code>MLMIIN</code> inside your course root folder, containing the course files. Wait until the cloning is completed. You can now open the folder in VS Code (and answer Yes about trusting the authors).</p>
 </section>
 </section>
 <section id="the-.gitignore-file-and-excluded-folders" class="level2">
 <h2 class="anchored" data-anchor-id="the-.gitignore-file-and-excluded-folders">6.2. The .gitignore file and excluded folders</h2>
 <p>Your clone of the course repository includes a <code>.gitignore</code> file that excludes certain folders and files from being tracked by git. This is important to avoid committing large files (such as large datasets) or any files that are not relevant to the course.</p>
-<p>In particular, the <code>.gitignore</code> file excludes: + A subfolder called <code>data</code> that we will use to store datasets. + A subfolder called <code>exclude</code> that you can use to store any files you do not want git to track. For example, you can use a text file in that folder to store sensitive information such as API keys, passwords, etc. that you do not want to commit to your repository.</p>
+<p>In particular, the <code>.gitignore</code> file excludes:</p>
+<ul>
+<li>A subfolder called <code>data</code> that we will use to store datasets.</li>
+<li>A subfolder called <code>exclude</code> that you can use to store any files you do not want git to track. For example, you can use a text file in that folder to store sensitive information such as API keys, passwords, etc. that you do not want to commit to your repository.</li>
+</ul>
 <p>The files in these folders are still available to your notebooks when you run the Docker container, but they will not be committed to your git repository. This helps keep your repository clean and avoids unnecessary large files.</p>
 <p>Of course any file in your <em>course root</em> folder but outside your cloned repository folder <code>MLMIIN</code> will also be ignored by git.</p>
-<p>Go ahead and create these folders now inside your cloned repository folder <code>MLMIIN</code>). Open a terminal (macOS) or PowerShell (Windows), navigate to your cloned repository folder, and run these commands in order:</p>
+<p>Go ahead and create these folders now inside your cloned repository folder (<code>MLMIIN</code>). Open a terminal (macOS) or PowerShell (Windows), navigate to your cloned repository folder, and run these commands in order:</p>
 <div class="sourceCode" id="cb17"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb17-1"><a href="#cb17-1" aria-hidden="true" tabindex="-1"></a><span class="fu">mkdir</span> data exclude</span>
 <span id="cb17-2"><a href="#cb17-2" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb17-3"><a href="#cb17-3" aria-hidden="true" tabindex="-1"></a><span class="bu">cd</span> exclude</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
@@ -493,20 +515,20 @@ Choose the right folder to run the container from
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p><strong>You should always run the container from your course root folder</strong>. This ensures that Docker can see all the subfolders we will need to access. The dockerfile and the run command are designed to mount the course root folder into the container at a folder called <code>/wd</code> (work directory).</p>
+<p><strong>You should always run the container from the <code>MIIN</code> clone folder</strong>. This ensures that Docker can see all the subfolders we will need to access. The dockerfile and the run command are designed to mount the <code>MIIN</code> folder into a (virtual) folder <em>inside</em> the container called <code>/wd</code> (work directory).</p>
 <p>Additionally, this keeps the container isolated from other folders on your computer, which is a good security practice.</p>
 </div>
 </div>
 <section id="get-the-course-docker-image-from-docker-hub" class="level2">
 <h2 class="anchored" data-anchor-id="get-the-course-docker-image-from-docker-hub">7.1. Get the course Docker image from Docker Hub</h2>
 <p>In <em>Terminal</em> for MacOS o or <em>PowerShell</em> for Windows run the following command to download the pre-built Docker image for the course from Docker Hub:</p>
-<div class="sourceCode" id="cb22"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb22-1"><a href="#cb22-1" aria-hidden="true" tabindex="-1"></a><span class="ex">docker</span> pull fsansegundo/mlmiin:latest</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb22"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb22-1"><a href="#cb22-1" aria-hidden="true" tabindex="-1"></a><span class="ex">docker</span> pull mlmiin/mlmiin:2026V01</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <p>and wait until the download ends. This is a several gigabytes download, so it may take a while depending on your internet connection speed.</p>
 </section>
 <section id="command-to-run-the-container" class="level2">
 <h2 class="anchored" data-anchor-id="command-to-run-the-container">7.2. Command to run the container</h2>
 <p>In <em>Terminal</em> for MacOS o or <em>PowerShell</em> for Windows, <span style="color:red; display:inline;font-weight:bold;">and from the MLMIIN repository folder</span>, run the following command to start the container and the Jupyter kernel inside it.</p>
-<div class="sourceCode" id="cb23"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb23-1"><a href="#cb23-1" aria-hidden="true" tabindex="-1"></a><span class="ex">docker</span> run <span class="at">-it</span> <span class="at">--rm</span> <span class="at">-p</span> 8888:8888 <span class="at">-v</span> <span class="st">"</span><span class="va">$PWD</span><span class="st">"</span>:/wd fsansegundo/mlmiin:2026V01</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb23"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb23-1"><a href="#cb23-1" aria-hidden="true" tabindex="-1"></a><span class="ex">docker</span> run <span class="at">-it</span> <span class="at">--rm</span> <span class="at">-p</span> 8888:8888 <span class="at">-v</span> <span class="st">"</span><span class="va">$PWD</span><span class="st">"</span>:/wd mlmiin/mlmiin:2026V01</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <p>In the terminal, you should see Jupyter starting and eventually a line like:</p>
 <div class="sourceCode" id="cb24"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb24-1"><a href="#cb24-1" aria-hidden="true" tabindex="-1"></a><span class="ex">http://127.0.0.1:8888/lab</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <p>In our course image, Jupyter is configured without a token (password), so the URL we need is simply</p>
@@ -677,7 +699,9 @@ Warning
 <li><p>Windows (PowerShell):</p>
 <div class="sourceCode" id="cb31"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb31-1"><a href="#cb31-1" aria-hidden="true" tabindex="-1"></a><span class="bu">cd</span> C:<span class="dt">\U</span>sers<span class="dt">\&lt;</span>yourname<span class="op">&gt;</span><span class="dt">\M</span>L\MIIN</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div></li>
 </ul></li>
-<li><p>Start the container: <code>bash      docker run -it --rm -p 8888:8888 -v "$PWD":/wd fsansegundo/mlmiin:2026V01</code> If the container needs to change your instructors will let you know and provide updated instructions.</p></li>
+<li><p>Start the container:</p>
+<div class="sourceCode" id="cb32"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb32-1"><a href="#cb32-1" aria-hidden="true" tabindex="-1"></a><span class="ex">docker</span> run <span class="at">-it</span> <span class="at">--rm</span> <span class="at">-p</span> 8888:8888 <span class="at">-v</span> <span class="st">"</span><span class="va">$PWD</span><span class="st">"</span>:/wd mlmiin/mlmiin:2026V01</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>If the container needs to change your instructors will let you know and provide updated instructions.</p></li>
 <li><p>Open VS Code and connect to the Jupyter server as described in section 8 above.</p></li>
 <li><p>Open the MIIN folder in VS Code if not already opened.</p></li>
 <li><p>If needed, make a copy of the notebook you will work on. <strong>Do not edit the original file in the <code>MLMIIN</code> folder!</strong></p></li>
