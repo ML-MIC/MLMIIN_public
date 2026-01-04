@@ -483,11 +483,13 @@ docker run -it --rm -p 8888:8888 -v "$($PWD.Path):/wd" mlmiin/mlmiin:2026V01
 
 ### 7.1.3. Check that Jupyter is running
 
-In both MacOS and Windows, after running the command above, you should see Jupyter starting and eventually a line like:
+In both MacOS and Windows, after running the command above, you should see Jupyter starting and eventually a line containing:
 
 ```bash
 http://127.0.0.1:8888/lab
 ```
+
+The container and Jupyter are now running, and you should leave this terminal as it is while you work.
 
 In our course image, Jupyter is configured without a token (password), so the URL we need is simply
 ```bash
