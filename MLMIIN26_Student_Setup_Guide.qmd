@@ -1,5 +1,8 @@
 ---
-title: "MLMIIN 2026 – Student Setup Guide"
+title: "Machine Learning 2026 – Student Setup Guide. "
+author: "ICAI, Universidad Pontificia Comillas"
+subtitle: "Official Master's Degree in Industrial Engineering + Master's Degree in Smart Industry"
+date: "Last updated on `r Sys.Date()`"
 format:
   html:
     toc: true
