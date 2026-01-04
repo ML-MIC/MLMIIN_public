@@ -457,7 +457,7 @@ Choose the right GitHub account for all git related operations
 </section>
 <section id="for-windows-users-configure-github-desktop-to-use-powershell-as-terminal." class="level3">
 <h3 class="anchored" data-anchor-id="for-windows-users-configure-github-desktop-to-use-powershell-as-terminal.">3.4.2 For Windows users: Configure GitHub Desktop to use powershell as terminal.</h3>
-<p>Open GitHub Desktop and go to the <em>File</em> menu, then select <em>Options</em>. Navigate to integrations, locate the <em>Shell</em> section and click the dropdown menu. Select <em>PowerShell</em> from the list of available applications and hit <em>Save</em>.</p>
+<p>Open GitHub Desktop and go to the <em>File</em> menu, then select <em>Options</em>. Navigate to integrations, locate the <em>Shell</em> section and click the dropdown menu. Select PowerShell from the list of available applications and hit <em>Save</em>.</p>
 </section>
 </section>
 <section id="using-git-in-vs-code" class="level2">
@@ -739,7 +739,7 @@ Warning
 <p>If you are using <em>GitHub Desktop</em></p>
 <p>In <em>GitHub Desktop</em>, make sure that your clone is selected as <em>Current Repository</em>.</p>
 <p><img src="./fig/GitHubDesktopCurrentRepo.png" width="50%/"></p>
-<p>Then click on <em>Repository → Open in Terminal</em> and wait for the terminal window to open.</p>
+<p>Then click on <em>Repository → Open in Terminal</em> (in Windows it should be Powershell; see 3.4.2) and wait for the terminal window to open.</p>
 <p><img src="./fig/GitHubDesktopOpenTerminal.png" width="70%/"></p>
 <p>When it does, type</p>
 <div class="sourceCode" id="cb29"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb29-1"><a href="#cb29-1" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> pull origin main</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
@@ -767,10 +767,13 @@ Warning
 <div class="sourceCode" id="cb32"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb32-1"><a href="#cb32-1" aria-hidden="true" tabindex="-1"></a><span class="bu">cd</span> C:<span class="dt">\U</span>sers<span class="dt">\&lt;</span>yourname<span class="op">&gt;</span><span class="dt">\M</span>L\MIIN</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div></li>
 </ul></li>
 <li><p>Start the container:</p>
-<p>In MacOS terminal:<br>
-<code>bash   docker run -it --rm -p 8888:8888 -v "$PWD":/wd mlmiin/mlmiin:2026V01</code> In Windows PowerShell:<br>
-<code>bash   docker run -it --rm -p 8888:8888 -v "$($PWD.Path):/wd" mlmiin/mlmiin:2026V01</code></p>
+<ul>
+<li><p>macOS:</p>
+<div class="sourceCode" id="cb33"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb33-1"><a href="#cb33-1" aria-hidden="true" tabindex="-1"></a><span class="ex">docker</span> run <span class="at">-it</span> <span class="at">--rm</span> <span class="at">-p</span> 8888:8888 <span class="at">-v</span> <span class="st">"</span><span class="va">$PWD</span><span class="st">"</span>:/wd mlmiin/mlmiin:2026V01</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div></li>
+<li><p>Windows (PowerShell):</p>
+<div class="sourceCode" id="cb34"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb34-1"><a href="#cb34-1" aria-hidden="true" tabindex="-1"></a><span class="ex">docker</span> run <span class="at">-it</span> <span class="at">--rm</span> <span class="at">-p</span> 8888:8888 <span class="at">-v</span> <span class="st">"</span><span class="va">$($PWD</span><span class="ex">.Path</span><span class="va">)</span><span class="st">:/wd"</span> mlmiin/mlmiin:2026V01</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <p>If the container needs to change your instructors will let you know and provide updated instructions.</p></li>
+</ul></li>
 <li><p>Open VS Code and connect to the Jupyter server as described in section 7 above.</p></li>
 <li><p>Open the MIIN folder in VS Code if not already opened.</p></li>
 <li><p>If needed, make a copy of the notebook you will work on. <strong>Do not edit the original file in the <code>MLMIIN</code> folder!</strong></p></li>

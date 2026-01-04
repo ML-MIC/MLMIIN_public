@@ -294,7 +294,7 @@ Login to your GitHub account and make sure that this is the GtHub account linked
 
 ### 3.4.2 For Windows users: Configure GitHub Desktop to use powershell as terminal.
 
-Open GitHub Desktop and go to the *File* menu, then select *Options*. Navigate to integrations,  locate the *Shell* section and click the dropdown menu. Select *PowerShell* from the list of available applications and hit *Save*.
+Open GitHub Desktop and go to the *File* menu, then select *Options*. Navigate to integrations,  locate the *Shell* section and click the dropdown menu. Select PowerShell from the list of available applications and hit *Save*.
 
 
 
@@ -644,7 +644,7 @@ In *GitHub Desktop*, make sure that your clone is selected as *Current Repositor
 
 <img src="./fig/GitHubDesktopCurrentRepo.png" width=50%/>
 
-Then click on *Repository → Open in Terminal* and wait for the terminal window to open. 
+Then click on *Repository → Open in Terminal* (in Windows it should be Powershell; see 3.4.2) and wait for the terminal window to open. 
 
 <img src="./fig/GitHubDesktopOpenTerminal.png" width=70%/>
 
@@ -684,17 +684,14 @@ and press *Enter*. Wait for the operation to complete.
      cd C:\Users\<yourname>\ML\MIIN
      ```
 4. Start the container:
-    
-    In MacOS terminal:  
+   - macOS:
      ```bash
      docker run -it --rm -p 8888:8888 -v "$PWD":/wd mlmiin/mlmiin:2026V01
      ```
-    In Windows PowerShell:  
+   - Windows (PowerShell):
      ```bash
      docker run -it --rm -p 8888:8888 -v "$($PWD.Path):/wd" mlmiin/mlmiin:2026V01
      ```
-     
-     
     If the container needs to change your instructors will let you know and provide updated instructions.
      
 5. Open VS Code and connect to the Jupyter server as described in section 7 above.
