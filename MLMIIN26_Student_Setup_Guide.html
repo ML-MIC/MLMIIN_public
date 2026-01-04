@@ -121,6 +121,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   <li><a href="#install-github-desktop-optional" id="toc-install-github-desktop-optional" class="nav-link" data-scroll-target="#install-github-desktop-optional">3.4. Install GitHub Desktop (optional)</a>
   <ul class="collapse">
   <li><a href="#configure-github-desktop" id="toc-configure-github-desktop" class="nav-link" data-scroll-target="#configure-github-desktop">3.4.1 Configure GitHub Desktop</a></li>
+  <li><a href="#for-windows-users-configure-github-desktop-to-use-powershell-as-terminal." id="toc-for-windows-users-configure-github-desktop-to-use-powershell-as-terminal." class="nav-link" data-scroll-target="#for-windows-users-configure-github-desktop-to-use-powershell-as-terminal.">3.4.2 For Windows users: Configure GitHub Desktop to use powershell as terminal.</a></li>
   </ul></li>
   <li><a href="#using-git-in-vs-code" id="toc-using-git-in-vs-code" class="nav-link" data-scroll-target="#using-git-in-vs-code">3.5. Using git in VS Code</a></li>
   </ul></li>
@@ -454,6 +455,10 @@ Choose the right GitHub account for all git related operations
 </div>
 </div>
 </section>
+<section id="for-windows-users-configure-github-desktop-to-use-powershell-as-terminal." class="level3">
+<h3 class="anchored" data-anchor-id="for-windows-users-configure-github-desktop-to-use-powershell-as-terminal.">3.4.2 For Windows users: Configure GitHub Desktop to use powershell as terminal.</h3>
+<p>Open GitHub Desktop and go to the <em>File</em> menu, then select <em>Options</em>. Navigate to integrations, locate the <em>Shell</em> section and click the dropdown menu. Select <em>PowerShell</em> from the list of available applications and hit <em>Save</em>.</p>
+</section>
 </section>
 <section id="using-git-in-vs-code" class="level2">
 <h2 class="anchored" data-anchor-id="using-git-in-vs-code">3.5. Using git in VS Code</h2>
@@ -731,6 +736,7 @@ Warning
 </div>
 <section id="using-github-desktop-1" class="level3">
 <h3 class="anchored" data-anchor-id="using-github-desktop-1">8.1.1. Using GitHub Desktop</h3>
+<p>If you are using <em>GitHub Desktop</em></p>
 <p>In <em>GitHub Desktop</em>, make sure that your clone is selected as <em>Current Repository</em>.</p>
 <p><img src="./fig/GitHubDesktopCurrentRepo.png" width="50%/"></p>
 <p>Then click on <em>Repository → Open in Terminal</em> and wait for the terminal window to open.</p>
@@ -761,7 +767,9 @@ Warning
 <div class="sourceCode" id="cb32"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb32-1"><a href="#cb32-1" aria-hidden="true" tabindex="-1"></a><span class="bu">cd</span> C:<span class="dt">\U</span>sers<span class="dt">\&lt;</span>yourname<span class="op">&gt;</span><span class="dt">\M</span>L\MIIN</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div></li>
 </ul></li>
 <li><p>Start the container:</p>
-<div class="sourceCode" id="cb33"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb33-1"><a href="#cb33-1" aria-hidden="true" tabindex="-1"></a><span class="ex">docker</span> run <span class="at">-it</span> <span class="at">--rm</span> <span class="at">-p</span> 8888:8888 <span class="at">-v</span> <span class="st">"</span><span class="va">$PWD</span><span class="st">"</span>:/wd mlmiin/mlmiin:2026V01</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>In MacOS terminal:<br>
+<code>bash   docker run -it --rm -p 8888:8888 -v "$PWD":/wd mlmiin/mlmiin:2026V01</code> In Windows PowerShell:<br>
+<code>bash   docker run -it --rm -p 8888:8888 -v "$($PWD.Path):/wd" mlmiin/mlmiin:2026V01</code></p>
 <p>If the container needs to change your instructors will let you know and provide updated instructions.</p></li>
 <li><p>Open VS Code and connect to the Jupyter server as described in section 7 above.</p></li>
 <li><p>Open the MIIN folder in VS Code if not already opened.</p></li>

@@ -280,8 +280,6 @@ If you prefer a graphical interface to manage git repositories, you can install 
 [https://desktop.github.com/download/](https://desktop.github.com/download/) and download the version for your OS. Run the installer and follow the instructions.
 
 
-
-
 ### 3.4.1 Configure GitHub Desktop
 
 After installing GitHub Desktop, open it and sign in with your GitHub account (use *Settings*). You can then clone repositories, create new ones, and manage your git projects using the graphical interface.
@@ -293,6 +291,12 @@ After installing GitHub Desktop, open it and sign in with your GitHub account (u
 Login to your GitHub account and make sure that this is the GtHub account linked to your university email, as requested above. If you have multiple GitHub accounts, make sure you are using the correct one (in taht case you will need to check this for every course session or assignment).
 
 :::
+
+### 3.4.2 For Windows users: Configure GitHub Desktop to use powershell as terminal.
+
+Open GitHub Desktop and go to the *File* menu, then select *Options*. Navigate to integrations,  locate the *Shell* section and click the dropdown menu. Select *PowerShell* from the list of available applications and hit *Save*.
+
+
 
 ## 3.5. Using git in VS Code
 
@@ -633,6 +637,8 @@ if needed.
 
 
 ### 8.1.1. Using GitHub Desktop
+
+If you are using *GitHub Desktop* 
    
 In *GitHub Desktop*, make sure that your clone is selected as *Current Repository*. 
 
@@ -678,10 +684,17 @@ and press *Enter*. Wait for the operation to complete.
      cd C:\Users\<yourname>\ML\MIIN
      ```
 4. Start the container:
-
+    
+    In MacOS terminal:  
      ```bash
      docker run -it --rm -p 8888:8888 -v "$PWD":/wd mlmiin/mlmiin:2026V01
      ```
+    In Windows PowerShell:  
+     ```bash
+     docker run -it --rm -p 8888:8888 -v "$($PWD.Path):/wd" mlmiin/mlmiin:2026V01
+     ```
+     
+     
     If the container needs to change your instructors will let you know and provide updated instructions.
      
 5. Open VS Code and connect to the Jupyter server as described in section 7 above.
