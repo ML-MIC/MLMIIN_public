@@ -587,7 +587,7 @@ Always run the container from the MIIN repository folder
 <section id="in-powershell-for-windows" class="level3">
 <h3 class="anchored" data-anchor-id="in-powershell-for-windows">7.1.2. In <em>PowerShell</em> for Windows</h3>
 <p>Run the following command to start the container and the Jupyter kernel inside it.</p>
-<div class="sourceCode" id="cb24"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb24-1"><a href="#cb24-1" aria-hidden="true" tabindex="-1"></a><span class="ex">docker</span> run <span class="at">-it</span> <span class="at">--rm</span> <span class="at">-p</span> 8888:8888 <span class="at">-v</span> <span class="st">"</span><span class="va">${PWD}</span><span class="st">:/wd"</span> mlmiin/mlmiin:2026V01</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb24"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb24-1"><a href="#cb24-1" aria-hidden="true" tabindex="-1"></a><span class="ex">docker</span> run <span class="at">-it</span> <span class="at">--rm</span> <span class="at">-p</span> 8888:8888 <span class="at">-v</span> <span class="st">"</span><span class="va">$($PWD</span><span class="ex">.Path</span><span class="va">)</span><span class="st">:/wd"</span> mlmiin/mlmiin:2026V01</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </section>
 <section id="check-that-jupyter-is-running" class="level3">
 <h3 class="anchored" data-anchor-id="check-that-jupyter-is-running">7.1.3. Check that Jupyter is running</h3>
