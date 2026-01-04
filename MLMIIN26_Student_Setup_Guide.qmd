@@ -8,8 +8,9 @@ format:
     toc: true
     html-math-method: katex
     # css: styles.css
-    toc_float: true
     toc_depth: 3
+    toc_float: true
+    toc-expand: true
     # number_sections: true
     code_folding: show
     fig_width: 7
@@ -43,9 +44,9 @@ The copy code icon <img src="./fig/copyCodeIcon.png" width=3%/> that appears whe
 :::
 
 
-## 0. Prerequisites
+# 0. Prerequisites
 
-### 0.1. Hardware / OS
+## 0.1. Hardware / OS
 
 - A laptop with at least:
   - 8 GB RAM (16 GB recommended); if you have less than 8 GB, let us know.
@@ -55,7 +56,7 @@ The copy code icon <img src="./fig/copyCodeIcon.png" width=3%/> that appears whe
     - *Windows 11* (64-bit)
     - If you use Linux, let us know.
 
-### 0.2. Create a course folder
+## 0.2. Create a course folder
 
 Decide on a folder where you will keep everything related to this course. It can be something for example like:
 
@@ -78,7 +79,7 @@ graph TD
 ```
 
 
-## 1. Install Docker
+# 1. Install Docker and the Course Docker Image
 
 Open a browser and go to [www.docker.com/products/docker-desktop](https://www.docker.com/products/docker-desktop/).
 Click on *Download Docker Desktop* and select the right download for your OS, as illustrated below:
@@ -86,7 +87,7 @@ Click on *Download Docker Desktop* and select the right download for your OS, as
    <img src="./fig/DockerDesktopSetup01.png" width=90%/>
 
 
-### 1.1. Docker Desktop Setup for MacOS 
+## 1.1. Docker Desktop Setup for MacOS 
 
 + Open the downloaded `.dmg` file. Drag **Docker.app** into the **Applications** folder.
 + Start Docker by hitting Command + Spacebar, typing **Docker**, and pressing Enter.
@@ -106,11 +107,11 @@ don't already have one).
     ```
 
 
-### 1.2. Docker Desktop Setup for Windows
+## 1.2. Docker Desktop Setup for Windows
 
 **Important:** On Windows, Docker Desktop requires **WSL2** and virtualization enabled.
 
-#### 1.2.1. Enable WSL2 and Virtualization (one-time)
+### 1.2.1. Enable WSL2 and Virtualization (one-time)
 
 + Press **Start**, type `powershell`, right-click **Windows PowerShell**, choose **Run as administrator**.
 + In the terminal that opens run:
@@ -129,7 +130,7 @@ You should see at least one distro (e.g. Ubuntu).
 
 Also make sure **virtualization is enabled** in your BIOS/UEFI (usually it already is; if not, look for “Intel VT-x” or “AMD-V”).
 
-#### 1.2.2. Install Docker Desktop
+### 1.2.2. Install Docker Desktop
 
 1. Go to:  
    https://www.docker.com/products/docker-desktop/
@@ -151,9 +152,34 @@ You should see a reply like
 Docker version 27.5.1, build 9f9e405
 ```
 
-## 2. Install Visual Studio Code and Extensions
+## 1.3. Get and Run the Course Docker Image
 
-### 2.1. Install VS Code
+
+:::{.callout-important}
+
+##### Choose the right folder to run the container from
+
+**You should always run the container from the `MIIN` clone folder**. This ensures that Docker can see all the subfolders we will need to access. The dockerfile and the run command are designed to mount the `MIIN` folder into a (virtual) folder *inside* the container called `/wd` (work directory).
+
+Additionally, this keeps the container isolated from other folders on your computer, which is a good security practice.
+
+:::
+
+
+### 1.3.1. Get the course Docker image from Docker Hub
+
+In *Terminal* for MacOS o or *PowerShell* for Windows run the following command to download the pre-built Docker image for the course from Docker Hub:
+
+```bash
+docker pull mlmiin/mlmiin:2026V01
+```
+
+and wait until the download ends. This is a several gigabytes download, so it may take a while depending on your internet connection speed.
+
+
+# 2. Install Visual Studio Code and Extensions
+
+## 2.1. Install VS Code
 
 1. Go to: https://code.visualstudio.com/
 2. Download and install **VS Code** for your OS (macOS or Windows).
@@ -164,7 +190,7 @@ You should see something like this:
 <img src="./fig/VSCode01.png" width=90%/>
 
 
-### 2.2. Install required extensions
+## 2.2. Install required extensions
 
 Install the following extensions from the VS Code Marketplace. With VS Code open, you may 
 simply open each link below to open the extension page, then click **Install**.
@@ -426,33 +452,10 @@ Your branch is up to date with 'origin/main'.
 nothing to commit, working tree clean
 ```
 
-
-# 7. Get and Run the Course Docker Image
-
-
-:::{.callout-important}
-
-##### Choose the right folder to run the container from
-
-**You should always run the container from the `MIIN` clone folder**. This ensures that Docker can see all the subfolders we will need to access. The dockerfile and the run command are designed to mount the `MIIN` folder into a (virtual) folder *inside* the container called `/wd` (work directory).
-
-Additionally, this keeps the container isolated from other folders on your computer, which is a good security practice.
-
-:::
+# 7. Connect from VS Code to the Jupyter Kernel in Docker
 
 
-## 7.1. Get the course Docker image from Docker Hub
-
-In *Terminal* for MacOS o or *PowerShell* for Windows run the following command to download the pre-built Docker image for the course from Docker Hub:
-
-```bash
-docker pull mlmiin/mlmiin:2026V01
-```
-
-and wait until the download ends. This is a several gigabytes download, so it may take a while depending on your internet connection speed.
-
-
-## 7.2. Command to run the container
+## 7.1 Run the container
 
 In *Terminal* for MacOS o or *PowerShell* for Windows,  <span style="color:red; display:inline;font-weight:bold;">and from the MLMIIN repository folder</span>, run the following command to start the container and the Jupyter kernel inside it.
 
@@ -479,9 +482,7 @@ http://localhost:8888
 :::
 
 
-# 8. Connect from VS Code to the Jupyter Kernel in Docker
-
-## 8.1. Open the course folder in VS Code
+## 7.2. Open the course folder in VS Code
 
 Do the following:
 
@@ -490,7 +491,7 @@ Do the following:
 3. Select the MLMIIN subfolder of your course root folder.
 4. VS Code might ask if you trust the folder → click *Yes, I trust the authors*.
 
-## 8.2. Open a notebook
+## 7.3. Open a notebook
 
 In the VS Code *Explorer* panel (the first icon on the left side bar) navigate to `01_Setup` and you will see the `1_1_Introduction.ipynb` notebook file there. **Do not open it!** 
 
@@ -511,7 +512,7 @@ The file may look different in your computer, because of the extensions, color s
 
 <img src="./fig/Notebook_1_1_Introduction.png" width=70%/>
 
-## 8.3. Select the Jupyter server
+## 7.4. Select the Jupyter server
 
 At the top-right corner of the notebook editor panel, you should see a **Select Kernel** button:
 
@@ -542,7 +543,7 @@ Finally click on the Python 3 (ipykernel) option to select the kernel.
 Now you are ready to start executing Python cells in the notebook. Search for the section with title *Python Setup Checks* in the notebook and run the cells there to verify that everything is working correctly. Let your instructor know if you encounter any issues. In the first course session we will go over these steps together.
 
 
-## 8.4 Stopping the Jupyter server and Docker container
+## 7.5 Stopping the Jupyter server and Docker container
 
 When you are done working for the day, and **after making sure you have saved your work**,
 go to the terminal where the Docker container is running and press `Ctrl + C` to stop the Jupyter server and the container. When asked to shut down the server, type `y` and press Enter. You should see something like this:
@@ -575,11 +576,11 @@ This is something you will need to do at the end of each course session.
 :::
 
 
-# 9. Typical Workflow for Each Session
+# 8. Typical Workflow for Each Session
 
 For *every course session*, you will usually repeat these steps. Your instructors will remind you to do so at the start of the first few sessions, but eventually it will be your responsibility to remember to do this.
 
-## 9.1 Update course files
+## 8.1 Update course files
 
 :::{.callout-important}
 
@@ -609,7 +610,7 @@ if needed.
 :::
 
 
-### 8.2.1. Using GitHub Desktop
+### 8.1.1. Using GitHub Desktop
    
 In *GitHub Desktop*, make sure that your clone is selected as *Current Repository*. 
 
@@ -626,7 +627,7 @@ git pull origin main
 ```
 and press *Enter*. Wait for the operation to complete. 
 
-### 9.2.2. Using VS Code
+### 8.1.2. Using VS Code
 
 Click on Terminal → New Terminal to open a terminal window in VS Code. 
 
@@ -641,7 +642,7 @@ git pull origin main
 and press *Enter*. Wait for the operation to complete. 
 
 
-## 9.3 Use the Jupyter server running with Docker
+## 8.3 Use the Jupyter server running with Docker
 
 1. *Start Docker Desktop* (Windows/macOS) → wait until it’s running.
 2. Open a terminal (macOS) or PowerShell (Windows).
@@ -661,7 +662,7 @@ and press *Enter*. Wait for the operation to complete.
      ```
     If the container needs to change your instructors will let you know and provide updated instructions.
      
-5. Open VS Code and connect to the Jupyter server as described in section 8 above.
+5. Open VS Code and connect to the Jupyter server as described in section 7 above.
 
 6. Open the MIIN folder in VS Code if not already opened.
 
@@ -671,7 +672,7 @@ and press *Enter*. Wait for the operation to complete.
 
 9. At the end of the session, remember to:
     + save your work and 
-    + stop the Jupyter server and Docker container as described in section 8.4 above.
+    + stop the Jupyter server and Docker container as described in section 7.5 above.
 
 
 
