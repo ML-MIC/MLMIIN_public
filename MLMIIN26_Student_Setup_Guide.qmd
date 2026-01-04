@@ -1,7 +1,7 @@
 ---
 title: "Machine Learning 2026 – Student Setup Guide. "
 author: "ICAI, Universidad Pontificia Comillas"
-subtitle: "Official Master's Degree in Industrial Engineering + Master's Degree in Smart Industry"
+subtitle: "[Official Master's Degree in Industrial Engineering + Master's Degree in Smart Industry](https://www.comillas.edu/en/postgraduate/master-universitario-en-ingenieria-industrial-master-en-industria-inteligente/)"
 date: "Last updated on `r Sys.Date()`"
 format:
   html:
