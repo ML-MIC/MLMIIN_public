@@ -35,7 +35,10 @@ In this course you will run *Python* code using a *Jupyter notebook* server *ins
 Make sure you read these notes at least once before starting the setup process. We will be going over this setup instructions in the course first session. So the goal of reading this document now is to familiarize yourself with the steps involved. **If you are certain** that you can proceed on your own (familiarity with Git and Docker is required), you can start the setup right away. But if you have any questions or concerns, please wait until the first session where we will go through the setup together and help you with any issues.
 :::
 
----
+:::{.callout-tip} 
+The copy code icon <img src="./fig/copyCodeIcon.png" width=3%/> that appears when you hover over the code blocks in this guide allows you to easily copy the code to your clipboard for pasting into your terminal or other applications.
+:::
+
 
 ## 0. Prerequisites
 
