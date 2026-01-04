@@ -302,7 +302,7 @@ Install MiKTeX from [https://miktex.org/download](https://miktex.org/download). 
 ## 5.1. About Quarto and setup
 
 
-Quarto is a scientific and technical publishing system built on Pandoc. It is used to create documents, presentations, websites, and more, using plain text files with simple formatting syntax. And it offers an (arguably superior) alternative to Jupyter notebooks for creating documents that combine code, text, and visualizations:
+Quarto is a scientific and technical publishing system built on Pandoc. It is used to create documents, presentations, websites, and more, using plain text files with simple formatting syntax. This guide you are reading is in fact a quarto document (rendered as html). And it offers an (arguably superior) alternative to Jupyter notebooks for creating documents that combine code, text, and visualizations:
 
 + Being plain-text based, it works well with git version control systems (opposite to Jupyter notebooks, which are JSON files that do not work well with git, to say the least). 
 + Quarto documents can be very easily converted to multiple output formats (HTML, PDF, Word, etc.) from the same source file. Jupyter notebooks are more limited in this regard.
