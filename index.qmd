@@ -69,6 +69,10 @@ Here we include at most a brief description of each item.  See detailed [Referen
 
 + [@PDSH] *Python Data Science Handbook.* This is also freely available online at [https://jakevdp.github.io/PythonDataScienceHandbook](https://jakevdp.github.io/PythonDataScienceHandbook). We are recommeding it not so much as a Machine Learning book, but as a reference for the Python data science stack (NumPy, Pandas, Matplotlib, Scikit-Learn, etc.).
 
++ 
+
+
+
 + [@kuhn2013] *Applied Predictive Modeling.* Another classic reference in the field.
 
 :::
