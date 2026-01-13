@@ -57,13 +57,13 @@ Here we include at most a brief description of each item.  See detailed [Referen
 
 ### Books
 
-+ [@Geron2022] *Hands-On Machine Learning with Scikit-Learn, Keras & TensorFlow (3rd Edition)* by  Aurélien Géron.
-+ [@serrano2021grokking] *Grokking Machine Learning* by Luis Serrano. 
-+ [@ISLP2023] Statistical learning. An Introduction to Statistical Learning: with Applications in Python, by James, G., Witten, D., Hastie, T., Tibshirani, R., Taylor, J.
-+ T. Hastie, R. Tibshirani & J. Friedman (2021). The Elements of Statistical Learning. Data Mining, Inference and Prediction. 2nd Ed. Springer. 
-+ R. Sebastian, L. H. Yuxi, V. Mirjalili (2022). Machine Learning with PyTorch and Scikit-Learn. Packt Publishing.
-+ Jake VanderPlas (2018) Python Data Science Handbook. Available online at https://jakevdp.github.io/PythonDataScienceHandbook/)
-+ M. Kuhn & K. Johnson (2013). Applied Predictive Modeling. Springer
++ [@Geron2022] *Hands-On Machine Learning with Scikit-Learn, Keras & TensorFlow (3rd Edition)*. 
++ [@serrano2021grokking] *Grokking Machine Learning*. 
++ [@ISLP2023] *Statistical learning. An Introduction to Statistical Learning: with Applications in Python*. Kindly made available for free by the authors at [https://www.statlearning.com](https://www.statlearning.com)
++ [@ESLI2009] *The Elements of Statistical Learning. Data Mining, Inference and Prediction. 2nd Ed.* Kindly made available for free by the authors at [https://hastie.su.domains/ElemStatLearn](https://hastie.su.domains/ElemStatLearn)
++ [@Raschka2022] *Machine Learning with PyTorch and Scikit-Learn: Develop machine learning and deep learning models with Python.* 
++ [@PDSH] *Python Data Science Handbook.* Freely available online at [https://jakevdp.github.io/PythonDataScienceHandbook](https://jakevdp.github.io/PythonDataScienceHandbook)
++ [@kuhn2013] *Applied Predictive Modeling.* Another classic reference in the field.
 
 :::
 
@@ -71,14 +71,12 @@ Here we include at most a brief description of each item.  See detailed [Referen
 
 ::: {.callout-note icon="false}
 
-### Books
-
-
 ### Online Resources (Web Pages, Blogs, Videos, Data Repositories)
 
 + [University of California at Irvine](http://archive.ics.uci.edu/ml/)
 + [Kaggle](https://www.kaggle.com/)
 + [Serrano Academy](https://www.youtube.com/@SerranoAcademy)
++ [3 blue 1 brown - Neural Networks](https://www.youtube.com/playlist?list=PLZHQObOWTQDMsr9K-fjW8Yc6l6g8b6h0s)
 
 :::
 
