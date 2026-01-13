@@ -57,12 +57,18 @@ Here we include at most a brief description of each item.  See detailed [Referen
 
 ### Books
 
-+ [@Geron2022] *Hands-On Machine Learning with Scikit-Learn, Keras & TensorFlow (3rd Edition)*. 
-+ [@serrano2021grokking] *Grokking Machine Learning*. 
-+ [@ISLP2023] *Statistical learning. An Introduction to Statistical Learning: with Applications in Python*. Kindly made available for free by the authors at [https://www.statlearning.com](https://www.statlearning.com)
-+ [@ESLI2009] *The Elements of Statistical Learning. Data Mining, Inference and Prediction. 2nd Ed.* Kindly made available for free by the authors at [https://hastie.su.domains/ElemStatLearn](https://hastie.su.domains/ElemStatLearn)
-+ [@Raschka2022] *Machine Learning with PyTorch and Scikit-Learn: Develop machine learning and deep learning models with Python.* 
-+ [@PDSH] *Python Data Science Handbook.* Freely available online at [https://jakevdp.github.io/PythonDataScienceHandbook](https://jakevdp.github.io/PythonDataScienceHandbook)
++ [@Geron2022] *Hands-On Machine Learning with Scikit-Learn, Keras & TensorFlow (3rd Edition)*. A very practical book with code examples in Python, with an approach close to the spirit of this course. The only caveat is that it uses TensorFlow/Keras for Deep Learning. And we stronlgy recommend PyTorch, so you need to learn Pytorch elsewhere (see below).
+
++ [@Raschka2022] *Machine Learning with PyTorch and Scikit-Learn: Develop machine learning and deep learning models with Python.* Sebastian Raschka has been writing very good books on Machine Learning for years. This is the latest iteration of his very popular "Machine Learning with Scikit-Learn" book series, and it uses PyTorch for Deep Learning, so it is a great complement to Geron's book.
+
++ [@serrano2021grokking] *Grokking Machine Learning*. Luis Serrano is one of the best Machine Learning educators out there, and his YouTube channel is a proof of that. We really like his conceptual approach to the subject, and this book follows closely that style.
+
++ [@ESLI2009] *The Elements of Statistical Learning. Data Mining, Inference and Prediction. 2nd Ed.* This is *THE BOOK* in capital letters for Machine Learning. A classic reference in the field, more theoretical and mathematically oriented than the previous ones, this is the text where many people learnt Machine Learning from when the field was much younger than today. The value of the book has not diminished with time. And to make things even better, it is kindly made available for free by the authors at [https://hastie.su.domains/ElemStatLearn](https://hastie.su.domains/ElemStatLearn).
+
++ [@ISLP2023] *Statistical learning. An Introduction to Statistical Learning: with Applications in Python*. A practical closer-to-the-ground version of the previous book, focusing on the implementation of the methods rather than on the theory behind them. The first edition used R for the code examples but now we have a Python edition. Also made available for free by the authors at [https://www.statlearning.com](https://www.statlearning.com)
+
++ [@PDSH] *Python Data Science Handbook.* This is also freely available online at [https://jakevdp.github.io/PythonDataScienceHandbook](https://jakevdp.github.io/PythonDataScienceHandbook). We are recommeding it not so much as a Machine Learning book, but as a reference for the Python data science stack (NumPy, Pandas, Matplotlib, Scikit-Learn, etc.).
+
 + [@kuhn2013] *Applied Predictive Modeling.* Another classic reference in the field.
 
 :::
