@@ -33,13 +33,6 @@ Last updated: `r Sys.Date()`
 <!-- ![](fig/QR.png){height=350px} ![ ](fig/MochueloCasaCampo.jpg){height=300px} -->
 ![](fig/QR.png){height=350px} ![ ](fig/Colibri-Canada.jpg){height=275px}
 
-# Links  
-
-+ This page is at: [https://ml-mic.github.io/MLMIIN_public/](https://ml-mic.github.io/MLMIIN_public/). **Bookmark it now!**
-
-+ [Course GitHub repository](https://github.com/ML-MIC/MLMIIN) 
-
-+ [Student setup guide](https://ml-mic.github.io/MLMIIN_public/MLMIIN26_Student_Setup_Guide.html)
 
 
 # Sessions
@@ -52,6 +45,13 @@ Last updated: `r Sys.Date()`
 
 + Welcome to Machine Learning 2026!
 
+# Links  
+
++ This page is at: [https://ml-mic.github.io/MLMIIN_public/](https://ml-mic.github.io/MLMIIN_public/). **Bookmark it now!**
+
++ [Course GitHub repository](https://github.com/ML-MIC/MLMIIN) 
+
++ [Student setup guide](https://ml-mic.github.io/MLMIIN_public/MLMIIN26_Student_Setup_Guide.html)
 
 # Recommended Readings and other Resources
 
