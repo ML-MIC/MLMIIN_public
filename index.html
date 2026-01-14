@@ -84,7 +84,7 @@ div.csl-indent {
 
 <section id="machine-learning-2026." class="level1">
 <h1>Machine Learning, 2026.</h1>
-<p>Last updated: 2026-01-13</p>
+<p>Last updated: 2026-01-14</p>
 <p><a href="https://www.comillas.edu/en/postgraduate/master-universitario-en-ingenieria-industrial-master-en-industria-inteligente/">Official Master’s Degree in Industrial Engineering + Master’s Degree in Smart Industry.</a> <a href="https://www.comillas.edu/icai/">ICAI, Universidad Pontificia Comillas.</a></p>
 <p><img src="fig/QR.png" height="350"> <img src="fig/MochueloCasaCampo.jpg" height="300"></p>
 </section>
@@ -118,6 +118,8 @@ Books
 </div>
 </div>
 <div class="callout-body-container callout-body">
+<section id="general-machine-learning" class="level4">
+<h4 class="anchored" data-anchor-id="general-machine-learning">General Machine Learning</h4>
 <ul>
 <li><p><span class="citation" data-cites="Geron2022">(<a href="#ref-Geron2022" role="doc-biblioref">Géron, 2022</a>)</span> <em>Hands-On Machine Learning with Scikit-Learn, Keras &amp; TensorFlow (3rd Edition)</em>. A very practical book with code examples in Python, with an approach close to the spirit of this course. The only caveat is that it uses TensorFlow/Keras for Deep Learning. And we stronlgy recommend PyTorch, so you need to learn Pytorch elsewhere (see below).</p></li>
 <li><p><span class="citation" data-cites="Raschka2022">(<a href="#ref-Raschka2022" role="doc-biblioref">Raschka, Liu, &amp; Mirjalili, 2022</a>)</span> <em>Machine Learning with PyTorch and Scikit-Learn: Develop machine learning and deep learning models with Python.</em> Sebastian Raschka has been writing very good books on Machine Learning for years. This is the latest iteration of his very popular “Machine Learning with Scikit-Learn” book series, and it uses PyTorch for Deep Learning, so it is a great complement to Geron’s book.</p></li>
@@ -125,9 +127,16 @@ Books
 <li><p><span class="citation" data-cites="ESLI2009">(<a href="#ref-ESLI2009" role="doc-biblioref">Hastie, Tibshirani, &amp; Friedman, 2009</a>)</span> <em>The Elements of Statistical Learning. Data Mining, Inference and Prediction. 2nd Ed.</em> This is <em>THE BOOK</em> in capital letters for Machine Learning. A classic reference in the field, more theoretical and mathematically oriented than the previous ones, this is the text where many people learnt Machine Learning from when the field was much younger than today. The value of the book has not diminished with time. And to make things even better, it is kindly made available for free by the authors at <a href="https://hastie.su.domains/ElemStatLearn">https://hastie.su.domains/ElemStatLearn</a>.</p></li>
 <li><p><span class="citation" data-cites="ISLP2023">(<a href="#ref-ISLP2023" role="doc-biblioref">James, Witten, Hastie, Tibshirani, &amp; Taylor, 2023</a>)</span> <em>Statistical learning. An Introduction to Statistical Learning: with Applications in Python</em>. A practical closer-to-the-ground version of the previous book, focusing on the implementation of the methods rather than on the theory behind them. The first edition used R for the code examples but now we have a Python edition. Also made available for free by the authors at <a href="https://www.statlearning.com">https://www.statlearning.com</a></p></li>
 <li><p><span class="citation" data-cites="PDSH">(<a href="#ref-PDSH" role="doc-biblioref">VanderPlas, 2016</a>)</span> <em>Python Data Science Handbook.</em> This is also freely available online at <a href="https://jakevdp.github.io/PythonDataScienceHandbook">https://jakevdp.github.io/PythonDataScienceHandbook</a>. We are recommeding it not so much as a Machine Learning book, but as a reference for the Python data science stack (NumPy, Pandas, Matplotlib, Scikit-Learn, etc.).</p></li>
-<li></li>
 <li><p><span class="citation" data-cites="kuhn2013">(<a href="#ref-kuhn2013" role="doc-biblioref">Kuhn &amp; Johnson, 2013</a>)</span> <em>Applied Predictive Modeling.</em> Another classic reference in the field.</p></li>
 </ul>
+</section>
+<section id="forecasting" class="level4">
+<h4 class="anchored" data-anchor-id="forecasting">Forecasting</h4>
+<ul>
+<li><p><span class="citation" data-cites="hyndman2025fpppy">(<a href="#ref-hyndman2025fpppy" role="doc-biblioref">Hyndman et al., 2025</a>)</span> <em>Forecasting: Principles and Practice, the Pythonic Way</em>. Hyndman’s books on forecasting are the main modern reference for the subject. Originally written in R, this is the new 2025 edition using Python (in particular, the Nixtlaverse set of libraries). This text is probably set to define the pythonic approach to forecasting in the next years. And it is freely available at <a href="https://otexts.com/fpppy/">https://otexts.com/fpppy/</a>.</p></li>
+<li><p><span class="citation" data-cites="peixeiro2022time">(<a href="#ref-peixeiro2022time" role="doc-biblioref">Peixeiro, 2022</a>)</span> <em>Time Series Forecasting in Python</em>. This book by Marco Peixieiro is a practical hands-on introduction to time series forecasting using Python. It used to be the basic reference for those moving from R to Python for time series forecasting, but now with Hyndman’s new book it is probably in need of a second edition. Still, it is a good book to learn about forecsting in Python outside the Nixtlaverse. And I would like to add that Peixeiro’s blog <a href="https://www.datasciencewithmarco.com/blog"><em>Data Science with Marco</em></a> is a great resource to learn about recent developments in time series forecasting with Python.</p></li>
+</ul>
+</section>
 </div>
 </div>
 <div class="callout callout-style-default callout-note callout-titled">
@@ -161,11 +170,17 @@ Géron, A. (2022). <em>Hands-on machine learning with scikit-learn, keras, and T
 <div id="ref-ESLI2009" class="csl-entry" role="listitem">
 Hastie, T., Tibshirani, R., &amp; Friedman, J. H. (2009). <em>The elements of statistical learning: Data mining, inference, and prediction</em> (2nd ed., p. xxii+745). New York, NY, USA: Springer Science+Business Media. <a href="https://doi.org/10.1007/978-0-387-84858-7">https://doi.org/10.1007/978-0-387-84858-7</a>
 </div>
+<div id="ref-hyndman2025fpppy" class="csl-entry" role="listitem">
+Hyndman, R. J., Athanasopoulos, G., Garza, A., Challu, C., Mergenthaler Canseco, M., &amp; Olivares, K. G. (2025). Forecasting: Principles and practice, the pythonic way. Retrieved from <a href="https://otexts.com/fpppy/">https://otexts.com/fpppy/</a>
+</div>
 <div id="ref-ISLP2023" class="csl-entry" role="listitem">
 James, G., Witten, D., Hastie, T., Tibshirani, R., &amp; Taylor, J. (2023). <em>An introduction to statistical learning with applications in python</em>. Springer International Publishing. <a href="https://doi.org/10.1007/978-3-031-38747-0">https://doi.org/10.1007/978-3-031-38747-0</a>
 </div>
 <div id="ref-kuhn2013" class="csl-entry" role="listitem">
 Kuhn, M., &amp; Johnson, K. (2013). <em>Applied predictive modeling</em>. New York, NY: Springer. Retrieved from <a href="https://link.springer.com/book/10.1007/978-1-4614-6849-3">https://link.springer.com/book/10.1007/978-1-4614-6849-3</a>
+</div>
+<div id="ref-peixeiro2022time" class="csl-entry" role="listitem">
+Peixeiro, M. (2022). <em>Time series forecasting in python</em>. Manning. Retrieved from <a href="https://www.manning.com/books/time-series-forecasting-in-python-book">https://www.manning.com/books/time-series-forecasting-in-python-book</a>
 </div>
 <div id="ref-Raschka2022" class="csl-entry" role="listitem">
 Raschka, S., Liu, Y. (Hayden), &amp; Mirjalili, V. (2022). <em>Machine learning with PyTorch and scikit-learn: Develop machine learning and deep learning models with python</em>. Packt Publishing. Retrieved from <a href="https://www.packtpub.com/product/machine-learning-with-pytorch-and-scikit-learn/9781801819312">https://www.packtpub.com/product/machine-learning-with-pytorch-and-scikit-learn/9781801819312</a>
