@@ -33,7 +33,6 @@ Last updated: `r Sys.Date()`
 <!-- ![](fig/QR.png){height=350px} ![ ](fig/MochueloCasaCampo.jpg){height=300px} -->
 ![](fig/QR.png){height=350px} ![ ](fig/Colibri-Canada.jpg){height=275px}
 
-
 # Links  
 
 + This page is at: [https://ml-mic.github.io/MLMIIN_public/](https://ml-mic.github.io/MLMIIN_public/). **Bookmark it now!**
@@ -44,6 +43,10 @@ Last updated: `r Sys.Date()`
 
 
 # Sessions
+
+## 2026-01-14 Session
+
++ <h3 style="color:red; font-weight:bold;">Remember to discuss course schedule!</h3>
 
 ## 2026-01-13 Session
 
