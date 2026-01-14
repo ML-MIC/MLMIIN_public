@@ -30,7 +30,8 @@ Last updated: `r Sys.Date()`
 [ICAI, Universidad Pontificia Comillas.](https://www.comillas.edu/icai/)
 
 
-![](fig/QR.png){height=350px} ![ ](fig/MochueloCasaCampo.jpg){height=300px}
+<!-- ![](fig/QR.png){height=350px} ![ ](fig/MochueloCasaCampo.jpg){height=300px} -->
+![](fig/QR.png){height=350px} ![ ](fig/Colibri-Canada.jpg){height=275px}
 
 
 # Links  
@@ -80,8 +81,9 @@ Here we include at most a brief description of each item.  See detailed [Referen
 
 + [@peixeiro2022time] *Time Series Forecasting in Python*. This book by Marco Peixieiro is a practical hands-on introduction to time series forecasting using Python. It used to be the basic reference for those moving from R to Python for time series forecasting, but now with Hyndman's new book it is probably in need of a second edition. Still, it is a good book to learn about forecsting in Python outside the Nixtlaverse. And I would like to add that Peixeiro's blog [*Data Science with Marco*](https://www.datasciencewithmarco.com/blog) is a great resource to learn about recent developments in time series forecasting with Python.
 
+#### A first glimpse on Deep Learning 
 
-
++ [@glassnerVisual2021] *Deep Learning: A Visual Approach*. This is one of my favorite books to get a first understanding of many Machine Learning and Deep Learning concepts. You will not find an equation of a line of code in the entire book, but its conceptual approach and visual explanations are outstanding.
 
 :::
 
