@@ -37,9 +37,16 @@ Last updated: `r Sys.Date()`
 
 # Sessions
 
+## 2026-01-20 Session
+
++ <h4 style="color:red; font-weight:bold;">Remember to discuss course schedule!</h4>
++ <h4 style="color:blue; font-weight:bold;">Talk about gitignore.</h4>
++ <h4 style="color:blue; font-weight:bold;">Talk about quarto rendering.</h4>
+
+
 ## 2026-01-14 Session
 
-+ <h3 style="color:red; font-weight:bold;">Remember to discuss course schedule!</h3>
++ <h4 style="color:red; font-weight:bold;">Remember to discuss course schedule!</h4>
 
 ## 2026-01-13 Session
 
@@ -91,7 +98,6 @@ Here we include at most a brief description of each item.  See detailed [Referen
 :::
 
 
-
 ::: {.callout-note icon="false}
 
 ### Online Resources (Web Pages, Blogs, Videos, Data Repositories)
@@ -102,6 +108,11 @@ Here we include at most a brief description of each item.  See detailed [Referen
 + [3 blue 1 brown - Neural Networks](https://www.youtube.com/playlist?list=PLZHQObOWTQDMsr9K-fjW8Yc6l6g8b6h0s)
 
 :::
+
+# Session Notes (html files)
+
++ [1_1_Introduction](./pages/sessions/01_Setup/1_1_Introduction.html)
++ [2_1_Classif_EDA_Preprocessing](./pages/sessions/2_1_Classif_EDA_Preprocessing/2_1_Classif_EDA_Preprocessing_local.html)
 
 
 # References
