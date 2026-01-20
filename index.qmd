@@ -127,7 +127,7 @@ Last updated: `r Sys.Date()`
 
 + [2_1_Classif_EDA_Preprocessing](./pages/sessions/2_1_Classif_EDA_Preprocessing/2_1_Classif_EDA_Preprocessing_local.html)
 + [2_2_LogisticRegression.html](./pages/sessions/2_2_Classification_Logistic_Regression/2_2_LogisticRegression.html)
-+ 2_3_KNN_Validation
++ [2_3_KNN_Validation](./pages/sessions/2_3_KNN_Validation/2_3_KNN_Validation.html)
 + 2_4_Decision_Trees
 + 2_5_EnsembleMethods
 + 2_6_Boosting
