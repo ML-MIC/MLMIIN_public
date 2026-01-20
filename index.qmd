@@ -26,12 +26,13 @@ knitr::opts_chunk$set(echo = TRUE)
 
 Last updated: `r Sys.Date()`
 
-[Official Master's Degree in Industrial Engineering + Master's Degree in Smart Industry.](https://www.comillas.edu/en/postgraduate/master-universitario-en-ingenieria-industrial-master-en-industria-inteligente/) 
+[Official Master's Degree in Industrial Engineering + Master's Degree in Smart Industry.](https://www.comillas.edu/en/postgraduate/master-universitario-en-ingenieria-industrial-master-en-industria-inteligente/)  
 [ICAI, Universidad Pontificia Comillas.](https://www.comillas.edu/icai/)
 
 
 <!-- ![](fig/QR.png){height=350px} ![ ](fig/MochueloCasaCampo.jpg){height=300px} -->
-![](fig/QR.png){height=350px} ![ ](fig/Colibri-Canada.jpg){height=275px}
+<!-- ![](fig/QR.png){height=350px} ![ ](fig/Colibri-Canada.jpg){height=275px} -->
+![](fig/QR.png){height=350px} ![ ](fig/Jabiru_111517DSCN5264.JPG){height=275px}
 
 
 
@@ -46,7 +47,7 @@ Last updated: `r Sys.Date()`
 
 ## 2026-01-14 Session
 
-+ <h4 style="color:red; font-weight:bold;">Remember to discuss course schedule!</h4>
++ Remember to discuss course schedule!
 
 ## 2026-01-13 Session
 
@@ -62,11 +63,18 @@ Last updated: `r Sys.Date()`
 
 # Recommended Readings and other Resources
 
-Here we include at most a brief description of each item.  See detailed [References](#references) section below.
++ Here we include at most a brief description of each item.  See detailed [References](#references) section below.
+
++ The bibliography for this course is provided in a [BibTeX](https://www.bibtex.org) file called `mlmiin.bib`, which you can [download from this link](https://ml-mic.github.io/MLMIIN_public/mlmiin.bib).
 
 ::: {.callout-note icon="false}
 
-### Books
+### Let us talk about books
+
+![](./fig/02-02-MachineLearningForDogs.png){width=45% fig-align="center" fig-alt="Machine Learning for Dogs"}
+
+
+
 
 #### General Machine Learning
 
@@ -81,6 +89,8 @@ Here we include at most a brief description of each item.  See detailed [Referen
 + [@ISLP2023] *Statistical learning. An Introduction to Statistical Learning: with Applications in Python*. A practical closer-to-the-ground version of the previous book, focusing on the implementation of the methods rather than on the theory behind them. The first edition used R for the code examples but now we have a Python edition. Also made available for free by the authors at [https://www.statlearning.com](https://www.statlearning.com)
 
 + [@PDSH] *Python Data Science Handbook.* This is also freely available online at [https://jakevdp.github.io/PythonDataScienceHandbook](https://jakevdp.github.io/PythonDataScienceHandbook). We are recommeding it not so much as a Machine Learning book, but as a reference for the Python data science stack (NumPy, Pandas, Matplotlib, Scikit-Learn, etc.).
+
++ [@pml1] *Probabilistic Machine Learning* (2022). Two volume set by K. Murphy. Visit [https://probml.github.io/pml-book/](https://probml.github.io/pml-book/). An enciclopedic, two volumes book that you can also [download for free here](https://github.com/probml/pml-book)! A great reference for the more mathematically inclined, and also a good way to help you move from classical Machine Learning to Probabilistic Machine Learning and Bayesian methods. *Note:* Use books 1 and 2, book 0 is an older version.
 
 + [@kuhn2013] *Applied Predictive Modeling.* Another classic reference in the field.
 
@@ -112,7 +122,39 @@ Here we include at most a brief description of each item.  See detailed [Referen
 # Session Notes (html files)
 
 + [1_1_Introduction](./pages/sessions/01_Setup/1_1_Introduction.html)
+
+## Classification Sessions
+
 + [2_1_Classif_EDA_Preprocessing](./pages/sessions/2_1_Classif_EDA_Preprocessing/2_1_Classif_EDA_Preprocessing_local.html)
++ [2_2_LogisticRegression.html](./pages/sessions/2_2_Classification_Logistic_Regression/2_2_LogisticRegression.html)
++ 2_3_KNN_Validation
++ 2_4_Decision_Trees
++ 2_5_EnsembleMethods
++ 2_6_Boosting
++ 2_7_SupportVectorMachines
+
+## Regression Sessions
+
++ 3_1_LinearRegression
++ 3_2_FeatureSelection_Regularization
++ 3_3_Beyond_Linear_Models
++ 3_4_NeuralNetworks
+
+## Forecasting Sessions
+
++ 4_1_Introduction_to_Forecasting
++ 4_2_Stationarity
++ 4_3_Baseline_Arima
++ 4_4_Sarima_Other_Models
++ 4_5_Forecasting_Exogenous_Prophet
+
+## Unsupervised Learning Sessions
+
++ 5_1_Unsupervised_PCA
++ 5_2_Unsupervised_Clustering
++ 5_3_Density_Estimation
+
+
 
 
 # References
