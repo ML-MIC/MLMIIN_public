@@ -40,9 +40,13 @@ Last updated: `r Sys.Date()`
 
 ## 2026-01-20 Session
 
+We have finished [2_1_Classif_EDA_Preprocessing](./pages/sessions/2_1_Classif_EDA_Preprocessing/2_1_Classif_EDA_Preprocessing_local.html) notebook and we have started [2_1_Classif_EDA_Preprocessing](./pages/sessions/2_1_Classif_EDA_Preprocessing/2_1_Classif_EDA_Preprocessing_local.html), discussing the signal vs noise idea behind Logistic Regression in the setting  of a one-numeric- input datasets.
+
 + <h4 style="color:red; font-weight:bold;">Remember to discuss course schedule!</h4>
 + <h4 style="color:blue; font-weight:bold;">Talk about gitignore.</h4>
 + <h4 style="color:blue; font-weight:bold;">Talk about quarto rendering.</h4>
+
+
 
 
 ## 2026-01-14 Session
