@@ -32,7 +32,10 @@ Last updated: `r Sys.Date()`
 
 <!-- ![](fig/QR.png){height=350px} ![ ](fig/MochueloCasaCampo.jpg){height=300px} -->
 <!-- ![](fig/QR.png){height=350px} ![ ](fig/Colibri-Canada.jpg){height=275px} -->
-![](fig/QR.png){height=350px} ![ ](fig/Jabiru_111517DSCN5264.JPG){height=275px}
+<!-- ![](fig/QR.png){height=350px} ![ ](fig/Jabiru_111517DSCN5264.JPG){height=275px} -->
+![](fig/QR.png){height=350px} ![ ](fig/20170824-0636-DSCN2359.JPG){height=275px}<!-- Torcecuellos -->
+
+
 
 
 
