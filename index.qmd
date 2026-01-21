@@ -47,9 +47,11 @@ We will have our first (mock) [course assignment]('./pages/MLMIIN_Student_Assign
 
 + <h4 style="color:blue; font-weight:bold;">Talk about quarto rendering.</h4>
 
+We have been working on [2_2_Classification_Logistic_Regression](./pages/sessions/2_2_Classification_Logistic_Regression/2_2_LogisticRegression.html) and we have stopped at the paragraph with the question "What Remains to Be Done in this Model?" (before *Prediction and Model Performance Measures in Classification*).
+
 ## 2026-01-20 Session
 
-We have finished [2_1_Classif_EDA_Preprocessing](./pages/sessions/2_1_Classif_EDA_Preprocessing/2_1_Classif_EDA_Preprocessing_local.html) notebook and we have started [2_1_Classif_EDA_Preprocessing](./pages/sessions/2_1_Classif_EDA_Preprocessing/2_1_Classif_EDA_Preprocessing_local.html), discussing the signal vs noise idea behind Logistic Regression in the setting  of a one-numeric- input datasets.
+We have finished [2_1_Classif_EDA_Preprocessing](./pages/sessions/2_1_Classif_EDA_Preprocessing/2_1_Classif_EDA_Preprocessing_local.html) notebook and we have started [2_2_Classification_Logistic_Regression](./pages/sessions/2_2_Classification_Logistic_Regression/2_2_LogisticRegression.html), discussing the signal vs noise idea behind Logistic Regression in the setting  of a one-numeric- input datasets.
 
 + <h4 style="color:red; font-weight:bold;">Remember to discuss course schedule!</h4>
 + <h4 style="color:blue; font-weight:bold;">Talk about gitignore.</h4>
