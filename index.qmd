@@ -41,6 +41,12 @@ Last updated: `r Sys.Date()`
 
 # Sessions
 
+## 2026-01-21 Session
+
+We will have our first (mock) course assignment. Please make sure that we know your email and associated github user beforehand.
+
++ <h4 style="color:blue; font-weight:bold;">Talk about quarto rendering.</h4>
+
 ## 2026-01-20 Session
 
 We have finished [2_1_Classif_EDA_Preprocessing](./pages/sessions/2_1_Classif_EDA_Preprocessing/2_1_Classif_EDA_Preprocessing_local.html) notebook and we have started [2_1_Classif_EDA_Preprocessing](./pages/sessions/2_1_Classif_EDA_Preprocessing/2_1_Classif_EDA_Preprocessing_local.html), discussing the signal vs noise idea behind Logistic Regression in the setting  of a one-numeric- input datasets.
