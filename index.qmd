@@ -43,7 +43,7 @@ Last updated: `r Sys.Date()`
 
 ## 2026-01-21 Session
 
-We will have our first (mock) course assignment. Please make sure that we know your email and associated github user beforehand.
+We will have our first (mock) [course assignment]('./pages/MLMIIN_Student_Assignments_Handout 1.md'). Please make sure that we know your email and associated github user beforehand.
 
 + <h4 style="color:blue; font-weight:bold;">Talk about quarto rendering.</h4>
 
