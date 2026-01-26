@@ -1,5 +1,6 @@
 ---
 title: ""
+date: ""
 format: 
   html:
     toc: true
@@ -8,11 +9,10 @@ format:
     toc_float: true
     number_sections: true
     theme: cosmo
-    code_folding: hide
+    code_folding: show
     fig_width: 7
     fig_height: 5
     df_print: paged
-date: ""
 bibliography: "mlmiin.bib"
 link-citations: true 
 csl: apa-6th-edition.csl
@@ -67,6 +67,20 @@ We have finished [2_1_Classif_EDA_Preprocessing](./pages/sessions/2_1_Classif_ED
 ## 2026-01-13 Session
 
 + Welcome to Machine Learning 2026!
+
+# Docker run commands
+
+## Windows
+
+```bash
+docker run -it --rm -p 8888:8888 -v "$PWD":/wd mlmiin/mlmiin:2026V01
+```
+
+## Mac OS
+
+```bash
+docker run -it --rm -p 8888:8888 -v "$($PWD.Path):/wd" mlmiin/mlmiin:2026V01
+```
 
 # Links  
 
