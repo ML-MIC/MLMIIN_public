@@ -33,19 +33,29 @@ Last updated: `r Sys.Date()`
 <!-- ![](fig/QR.png){height=350px} ![ ](fig/MochueloCasaCampo.jpg){height=300px} -->
 <!-- ![](fig/QR.png){height=350px} ![ ](fig/Colibri-Canada.jpg){height=275px} -->
 <!-- ![](fig/QR.png){height=350px} ![ ](fig/Jabiru_111517DSCN5264.JPG){height=275px} -->
-![](fig/QR.png){height=350px} ![ ](fig/20170824-0636-DSCN2359.JPG){height=275px}<!-- Torcecuellos -->
-
+<!--![](fig/QR.png){height=350px} ![ ](fig/20170824-0636-DSCN2359.JPG){height=275px} Torcecuellos -->
+![](fig/QR.png){height=350px} ![ ](fig/DSCN7649.JPG){height=275px}<!-- Martín pescador acollarado -->
 
 
 
 
 # Sessions
 
+## 2026-01-27 Session
+
++ <h4 style="color:red; font-weight:bold;">Course schedule proposal:</h4>  
+For the two weeks preceding the midterms we will have three hour sessions: 
+  - Tuesdays 17th and 24th February, 15:00-18:00
+  - Wednesday 18th and 25th February, 14:00-17:00
+
+
+
 ## 2026-01-21 Session
+
 
 We will have our first (mock) [course assignment]('./pages/MLMIIN_Student_Assignments_Handout 1.md'). Please make sure that we know your email and associated github user beforehand.
 
-+ <h4 style="color:blue; font-weight:bold;">Talk about quarto rendering.</h4>
++ <h4 style="color:blue">Talk about quarto rendering.</h4>
 
 We have been working on [2_2_Classification_Logistic_Regression](./pages/sessions/2_2_Classification_Logistic_Regression/2_2_LogisticRegression.html) and we have stopped at the paragraph with the question "What Remains to Be Done in this Model?" (before *Prediction and Model Performance Measures in Classification*).
 
@@ -53,9 +63,9 @@ We have been working on [2_2_Classification_Logistic_Regression](./pages/session
 
 We have finished [2_1_Classif_EDA_Preprocessing](./pages/sessions/2_1_Classif_EDA_Preprocessing/2_1_Classif_EDA_Preprocessing_local.html) notebook and we have started [2_2_Classification_Logistic_Regression](./pages/sessions/2_2_Classification_Logistic_Regression/2_2_LogisticRegression.html), discussing the signal vs noise idea behind Logistic Regression in the setting  of a one-numeric- input datasets.
 
-+ <h4 style="color:red; font-weight:bold;">Remember to discuss course schedule!</h4>
-+ <h4 style="color:blue; font-weight:bold;">Talk about gitignore.</h4>
-+ <h4 style="color:blue; font-weight:bold;">Talk about quarto rendering.</h4>
++ <h4 style="color:blue;">Remember to discuss course schedule!</h4>
++ <h4 style="color:blue;">Talk about gitignore.</h4>
++ <h4 style="color:blue;">Talk about quarto rendering.</h4>
 
 
 
