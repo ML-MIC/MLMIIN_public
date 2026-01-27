@@ -48,7 +48,7 @@ For the two weeks preceding the midterms we will have three hour sessions:
   - Tuesdays 17th and 24th February, 15:00-18:00
   - Wednesday 18th and 25th February, 14:00-17:00
 
-
++ Today we finished the Logistic Regression and started the (very preliminary) discussion of KNN. 
 
 ## 2026-01-21 Session
 
