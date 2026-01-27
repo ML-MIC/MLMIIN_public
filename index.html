@@ -111,8 +111,8 @@ div.csl-indent {
   </ul></li>
   <li><a href="#docker-run-commands" id="toc-docker-run-commands" class="nav-link" data-scroll-target="#docker-run-commands">Docker run commands</a>
   <ul class="collapse">
-  <li><a href="#windows" id="toc-windows" class="nav-link" data-scroll-target="#windows">Windows</a></li>
   <li><a href="#mac-os" id="toc-mac-os" class="nav-link" data-scroll-target="#mac-os">Mac OS</a></li>
+  <li><a href="#windows" id="toc-windows" class="nav-link" data-scroll-target="#windows">Windows</a></li>
   </ul></li>
   <li><a href="#links" id="toc-links" class="nav-link" data-scroll-target="#links">Links</a></li>
   <li><a href="#recommended-readings-and-other-resources" id="toc-recommended-readings-and-other-resources" class="nav-link" data-scroll-target="#recommended-readings-and-other-resources">Recommended Readings and other Resources</a></li>
@@ -134,7 +134,7 @@ div.csl-indent {
 
 <section id="machine-learning-2026." class="level1">
 <h1>Machine Learning, 2026.</h1>
-<p>Last updated: 2026-01-26</p>
+<p>Last updated: 2026-01-27</p>
 <p><a href="https://www.comillas.edu/en/postgraduate/master-universitario-en-ingenieria-industrial-master-en-industria-inteligente/">Official Master’s Degree in Industrial Engineering + Master’s Degree in Smart Industry.</a><br>
 <a href="https://www.comillas.edu/icai/">ICAI, Universidad Pontificia Comillas.</a></p>
 <!-- ![](fig/QR.png){height=350px} ![ ](fig/MochueloCasaCampo.jpg){height=300px} -->
@@ -184,12 +184,12 @@ Talk about quarto rendering.
 </section>
 <section id="docker-run-commands" class="level1">
 <h1>Docker run commands</h1>
-<section id="windows" class="level2">
-<h2 class="anchored" data-anchor-id="windows">Windows</h2>
-<div class="sourceCode" id="cb1"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="ex">docker</span> run <span class="at">-it</span> <span class="at">--rm</span> <span class="at">-p</span> 8888:8888 <span class="at">-v</span> <span class="st">"</span><span class="va">$PWD</span><span class="st">"</span>:/wd mlmiin/mlmiin:2026V01</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</section>
 <section id="mac-os" class="level2">
 <h2 class="anchored" data-anchor-id="mac-os">Mac OS</h2>
+<div class="sourceCode" id="cb1"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="ex">docker</span> run <span class="at">-it</span> <span class="at">--rm</span> <span class="at">-p</span> 8888:8888 <span class="at">-v</span> <span class="st">"</span><span class="va">$PWD</span><span class="st">"</span>:/wd mlmiin/mlmiin:2026V01</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</section>
+<section id="windows" class="level2">
+<h2 class="anchored" data-anchor-id="windows">Windows</h2>
 <div class="sourceCode" id="cb2"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="ex">docker</span> run <span class="at">-it</span> <span class="at">--rm</span> <span class="at">-p</span> 8888:8888 <span class="at">-v</span> <span class="st">"</span><span class="va">$($PWD</span><span class="ex">.Path</span><span class="va">)</span><span class="st">:/wd"</span> mlmiin/mlmiin:2026V01</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </section>
 </section>
