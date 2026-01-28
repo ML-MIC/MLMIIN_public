@@ -42,6 +42,10 @@ Last updated: `r Sys.Date()`
 
 # Sessions
 
+## 2026-01-28 Session
+
++ Today we continued the discussion of KNN models; we are using this model to introduce many foundational ideas of Machine Learning. 
+
 ## 2026-01-27 Session
 
 + <h4 style="color:red; font-weight:bold;">Course schedule proposal:</h4>  
