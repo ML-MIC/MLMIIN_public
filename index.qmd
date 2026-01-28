@@ -34,7 +34,8 @@ Last updated: `r Sys.Date()`
 <!-- ![](fig/QR.png){height=350px} ![ ](fig/Colibri-Canada.jpg){height=275px} -->
 <!-- ![](fig/QR.png){height=350px} ![ ](fig/Jabiru_111517DSCN5264.JPG){height=275px} -->
 <!--![](fig/QR.png){height=350px} ![ ](fig/20170824-0636-DSCN2359.JPG){height=275px} Torcecuellos -->
-![](fig/QR.png){height=350px} ![ ](fig/DSCN7649.JPG){height=275px}<!-- Martín pescador acollarado -->
+<!-- ![](fig/QR.png){height=350px} ![ ](fig/DSCN7649.JPG){height=275px} --><!-- Martín pescador acollarado -->
+![](fig/QR.png){height=350px} ![ ](fig/elan_141733DSCN5898.JPG){height=275px}
 
 
 
@@ -166,7 +167,7 @@ docker run -it --rm -p 8888:8888 -v "$($PWD.Path):/wd" mlmiin/mlmiin:2026V01
 
 + [2_1_Classif_EDA_Preprocessing](./pages/sessions/2_1_Classif_EDA_Preprocessing/2_1_Classif_EDA_Preprocessing_local.html)
 + [2_2_LogisticRegression.html](./pages/sessions/2_2_Classification_Logistic_Regression/2_2_LogisticRegression_local.html)
-+ [2_3_KNN_Validation](./pages/sessions/2_3_KNN_Validation/2_3_KNN_Validation.html)
++ [2_3_KNN_Validation](./pages/sessions/2_3_KNN_Validation/2_3_KNN_Validation_local.html)
 + 2_4_Decision_Trees
 + 2_5_EnsembleMethods
 + 2_6_Boosting
