@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.7.32">
+<meta name="generator" content="quarto-1.8.27">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -81,14 +81,15 @@ div.csl-indent {
 <script src="index_files/libs/clipboard/clipboard.min.js"></script>
 <script src="index_files/libs/quarto-html/quarto.js" type="module"></script>
 <script src="index_files/libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="index_files/libs/quarto-html/axe/axe-check.js" type="module"></script>
 <script src="index_files/libs/quarto-html/popper.min.js"></script>
 <script src="index_files/libs/quarto-html/tippy.umd.min.js"></script>
 <script src="index_files/libs/quarto-html/anchor.min.js"></script>
 <link href="index_files/libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="index_files/libs/quarto-html/quarto-syntax-highlighting-37eea08aefeeee20ff55810ff984fec1.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="index_files/libs/quarto-html/quarto-syntax-highlighting-ed96de9b727972fe78a7b5d16c58bf87.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="index_files/libs/bootstrap/bootstrap.min.js"></script>
 <link href="index_files/libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="index_files/libs/bootstrap/bootstrap-8a894fcc3cb5e37eb5bf30def131be2f.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="index_files/libs/bootstrap/bootstrap-cb30a54fa6d8a68f23b514d3e02881af.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 
 
 </head>
@@ -139,7 +140,7 @@ div.csl-indent {
 
 <section id="machine-learning-2026." class="level1">
 <h1>Machine Learning, 2026.</h1>
-<p>Last updated: 2026-02-02</p>
+<p>Last updated: 2026-02-03</p>
 <p><a href="https://www.comillas.edu/en/postgraduate/master-universitario-en-ingenieria-industrial-master-en-industria-inteligente/">Official Master’s Degree in Industrial Engineering + Master’s Degree in Smart Industry.</a><br>
 <a href="https://www.comillas.edu/icai/">ICAI, Universidad Pontificia Comillas.</a></p>
 <!-- ![](fig/QR.png){height=350px} ![ ](fig/MochueloCasaCampo.jpg){height=300px} -->
@@ -148,7 +149,8 @@ div.csl-indent {
 <!--![](fig/QR.png){height=350px} ![ ](fig/20170824-0636-DSCN2359.JPG){height=275px} Torcecuellos -->
 <!-- ![](fig/QR.png){height=350px} ![ ](fig/DSCN7649.JPG){height=275px} -->
 <!-- Martín pescador acollarado -->
-<p><img src="fig/QR.png" height="350"> <img src="fig/elan_141733DSCN5898.JPG" height="275"></p>
+<!-- ![](fig/QR.png){height=350px} ![ ](fig/elan_141733DSCN5898.JPG){height=275px} -->
+<p><img src="fig/QR.png" height="350"> <img src="fig/CorredorSahariano.jpeg" height="275"></p>
 </section>
 <section id="sessions" class="level1">
 <h1>Sessions</h1>
@@ -214,16 +216,16 @@ Talk about quarto rendering.
 <h1>Docker run commands</h1>
 <section id="mac-os" class="level2">
 <h2 class="anchored" data-anchor-id="mac-os">Mac OS</h2>
-<div class="sourceCode" id="cb1"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="ex">docker</span> run <span class="at">-it</span> <span class="at">--rm</span> <span class="at">-p</span> 8888:8888 <span class="at">-v</span> <span class="st">"</span><span class="va">$PWD</span><span class="st">"</span>:/wd mlmiin/mlmiin:2026V01</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb1"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="ex">docker</span> run <span class="at">-it</span> <span class="at">--rm</span> <span class="at">-p</span> 8888:8888 <span class="at">-v</span> <span class="st">"</span><span class="va">$PWD</span><span class="st">"</span>:/wd mlmiin/mlmiin:2026V01</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <section id="to-mount-the-exclude-folder" class="level3">
 <h3 class="anchored" data-anchor-id="to-mount-the-exclude-folder">To mount the <code>exclude</code> folder</h3>
 <p>Add a second mount point like this to the command. This is needed because Docker does not follow symbolic links on Mac OS or Linux. The command is easily adaptable to mount any other folder under Windows as well, just change the path format accordingly.</p>
-<div class="sourceCode" id="cb2"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="ex">-v</span> <span class="va">$PWD</span>/exclude:/wd/exclude</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb2"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="ex">docker</span> run <span class="at">-it</span> <span class="at">--rm</span> <span class="at">-p</span> 8888:8888 <span class="at">-v</span> <span class="st">"</span><span class="va">$PWD</span><span class="st">"</span>:/wd  <span class="at">-v</span> <span class="st">"</span><span class="va">$PWD</span><span class="st">"</span>/exclude:/wd/exclude mlmiin/mlmiin:2026V01</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </section>
 </section>
 <section id="windows" class="level2">
 <h2 class="anchored" data-anchor-id="windows">Windows</h2>
-<div class="sourceCode" id="cb3"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="ex">docker</span> run <span class="at">-it</span> <span class="at">--rm</span> <span class="at">-p</span> 8888:8888 <span class="at">-v</span> <span class="st">"</span><span class="va">$($PWD</span><span class="ex">.Path</span><span class="va">)</span><span class="st">:/wd"</span> mlmiin/mlmiin:2026V01</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb3"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="ex">docker</span> run <span class="at">-it</span> <span class="at">--rm</span> <span class="at">-p</span> 8888:8888 <span class="at">-v</span> <span class="st">"</span><span class="va">$($PWD</span><span class="ex">.Path</span><span class="va">)</span><span class="st">:/wd"</span> mlmiin/mlmiin:2026V01</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </section>
 </section>
 <section id="links" class="level1">
@@ -246,7 +248,7 @@ Talk about quarto rendering.
 <i class="callout-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-Let us talk about books
+<span class="screen-reader-only">Note</span>Let us talk about books
 </div>
 </div>
 <div class="callout-body-container callout-body">
@@ -289,7 +291,7 @@ Let us talk about books
 <i class="callout-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-Online Resources (Web Pages, Blogs, Videos, Data Repositories)
+<span class="screen-reader-only">Note</span>Online Resources (Web Pages, Blogs, Videos, Data Repositories)
 </div>
 </div>
 <div class="callout-body-container callout-body">
@@ -439,13 +441,14 @@ VanderPlas, J. (2016). <em>Python data science handbook: Essential tools for wor
       e.clearSelection();
     }
     const getTextToCopy = function(trigger) {
-        const codeEl = trigger.previousElementSibling.cloneNode(true);
-        for (const childEl of codeEl.children) {
-          if (isCodeAnnotation(childEl)) {
-            childEl.remove();
-          }
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
         }
-        return codeEl.innerText;
+      }
+      return codeEl.innerText;
     }
     const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
       text: getTextToCopy
