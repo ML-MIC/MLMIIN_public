@@ -36,7 +36,7 @@ Last updated: `r Sys.Date()`
 <!--![](fig/QR.png){height=350px} ![ ](fig/20170824-0636-DSCN2359.JPG){height=275px} Torcecuellos -->
 <!-- ![](fig/QR.png){height=350px} ![ ](fig/DSCN7649.JPG){height=275px} --><!-- Martín pescador acollarado -->
 <!-- ![](fig/QR.png){height=350px} ![ ](fig/elan_141733DSCN5898.JPG){height=275px} -->
-![](fig/QR.png){height=350px} ![ ](fig/CorredorSahariano.jpeg){height=275px}
+![](fig/QR.png){height=300px} ![ ](fig/CorredorSahariano.jpeg){height=275px}
 
 
 
