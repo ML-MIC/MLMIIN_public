@@ -42,6 +42,10 @@ Last updated: `r Sys.Date()`
 
 # Sessions
 
+## 2026-02-03 Session
+
+<!-- + Yellowbrick validation curve https://www.scikit-yb.org/en/latest/api/model_selection/validation_curve.html -->
+
 
 ## 2026-01-28 Session
 
