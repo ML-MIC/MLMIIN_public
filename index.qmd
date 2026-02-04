@@ -177,6 +177,11 @@ docker run -it --rm -p 8888:8888 -v "$($PWD.Path):/wd" mlmiin/mlmiin:2026V01
 
 + [Ensemble Methods for Machine Learning](https://www.manning.com/books/ensemble-methods-for-machine-learning) by G.Kunapuli. 
 
+#### Hyperparameter Optimization
+
++ 
+
+
 
 :::
 
