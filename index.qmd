@@ -171,6 +171,13 @@ docker run -it --rm -p 8888:8888 -v "$($PWD.Path):/wd" mlmiin/mlmiin:2026V01
 
 + [@glassnerVisual2021] *Deep Learning: A Visual Approach*. This is one of my favorite books to get a first understanding of many Machine Learning and Deep Learning concepts. You will not find an equation of a line of code in the entire book, but its conceptual approach and visual explanations are outstanding.
 
++ [Dive into deep learning](https://d2l.ai/index.html)
+
+#### Ensemble Methods & Boosting
+
++ [Ensemble Methods for Machine Learning](https://www.manning.com/books/ensemble-methods-for-machine-learning) by G.Kunapuli. 
+
+
 :::
 
 
