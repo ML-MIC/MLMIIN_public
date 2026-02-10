@@ -37,17 +37,27 @@ Last updated: `r Sys.Date()`
 <!-- ![](fig/QR.png){height=350px} ![ ](fig/DSCN7649.JPG){height=275px} --><!-- Martín pescador acollarado -->
 <!-- ![](fig/QR.png){height=350px} ![ ](fig/elan_141733DSCN5898.JPG){height=275px} -->
 <!-- ![](fig/QR.png){height=300px} ![ ](fig/CorredorSahariano.jpeg){height=275px} -->
-![](fig/QR.png){height=300px} ![ ](fig/quetzal.png){height=275px}
-
+<!-- ![](fig/QR.png){height=300px} ![ ](fig/quetzal.png){height=275px} -->
+![](fig/QR.png){height=300px} [![ ](fig/urutau.jpg){height=275px}](https://www.dropbox.com/scl/fi/saacenp52dwwkcg1o7etj/p900-0398-DSCN7254.MOV?rlkey=xji5hgcrxmudbqxt22c7716aa&dl=0)
 
 # Sessions
 
+## 2026-02-10 Session
+
++ Today we finish the decission trees session and we start talking about ensemble and boosting methods.
++ **Pandas 3.0 has arrived** (Release date: 2026-01-21). Here you will find a [Medium post with a summary of some very relevant changes](https://medium.com/python-in-plain-english/pandas-3-0-new-features-that-change-python-data-analysis-forever-e8f274aa4c6f).  
+**Note:** our Docker container uses a previous version of Pandas, so we will not need/be able to use the new features in the course sessions; but we encourage you to look at the changes anyway, since Pandas ia a major component of the python Data Science stack, and the new version is a major update.
++ We will also introduce the first assignment of the course.
+
+
 ## 2026-02-04 Session
+
++ This session dealt with decission trees.  
 
 
 ## 2026-02-03 Session
 
-+ Today we finished the discussion of KNN models and basic validation methods. 
++ Today we finished the discussion of KNN models and basic validation methods.  
 + Updated code for exercises
 
 
