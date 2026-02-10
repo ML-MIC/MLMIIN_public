@@ -44,7 +44,7 @@ Last updated: `r Sys.Date()`
 
 ## 2026-02-10 Session
 
-+ Today we finish the decission trees session and we start talking about ensemble and boosting methods.
++ Today we finish the decission trees session and we start talking about ensemble and boosting methods. We have finished the bagging and random forests part. 
 + **Pandas 3.0 has arrived** (Release date: 2026-01-21). Here you will find a [Medium post with a summary of some very relevant changes](https://medium.com/python-in-plain-english/pandas-3-0-new-features-that-change-python-data-analysis-forever-e8f274aa4c6f).  
 **Note:** our Docker container uses a previous version of Pandas, so we will not need/be able to use the new features in the course sessions; but we encourage you to look at the changes anyway, since Pandas ia a major component of the python Data Science stack, and the new version is a major update.
 + We will also introduce the first assignment of the course.
