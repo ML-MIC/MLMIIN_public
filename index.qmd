@@ -38,9 +38,14 @@ Last updated: `r Sys.Date()`
 <!-- ![](fig/QR.png){height=350px} ![ ](fig/elan_141733DSCN5898.JPG){height=275px} -->
 <!-- ![](fig/QR.png){height=300px} ![ ](fig/CorredorSahariano.jpeg){height=275px} -->
 <!-- ![](fig/QR.png){height=300px} ![ ](fig/quetzal.png){height=275px} -->
-![](fig/QR.png){height=300px} [![ ](fig/urutau.jpg){height=275px}](https://www.dropbox.com/scl/fi/saacenp52dwwkcg1o7etj/p900-0398-DSCN7254.MOV?rlkey=xji5hgcrxmudbqxt22c7716aa&dl=0)
+<!-- ![](fig/QR.png){height=300px} [![ ](fig/urutau.jpg){height=275px}](https://www.dropbox.com/scl/fi/saacenp52dwwkcg1o7etj/p900-0398-DSCN7254.MOV?rlkey=xji5hgcrxmudbqxt22c7716aa&dl=0) -->
+![](fig/QR.png){height=300px} ![ ](fig/Cuco.JPG){height=275px}
 
 # Sessions
+
+## 2026-02-11 Session
+
++ Boosting methods.
 
 ## 2026-02-10 Session
 
@@ -216,10 +221,9 @@ docker run -it --rm -p 8888:8888 -v "$($PWD.Path):/wd" mlmiin/mlmiin:2026V01
 + [2_1_Classif_EDA_Preprocessing](./pages/sessions/2_1_Classif_EDA_Preprocessing/2_1_Classif_EDA_Preprocessing_local.html)
 + [2_2_LogisticRegression.html](./pages/sessions/2_2_Classification_Logistic_Regression/2_2_LogisticRegression_local.html)
 + [2_3_KNN_Validation](./pages/sessions/2_3_KNN_Validation/2_3_KNN_Validation_local.html)
-+ [2_4_Decision_Trees](./pages/sessions/2_4_Decision_Trees/2_4_Decision_Trees.html)
-+ 2_5_EnsembleMethods
-+ 2_6_Boosting
-+ 2_7_SupportVectorMachines
++ [2_4_Decision_Trees](./pages/sessions/2_4_Decision_Trees/2_4_Decision_Trees_local.html)
++ [2_5_EnsembleMethods and Boosting](./pages/sessions/2_5_EnsembleMethods_Boosting/2_5_EnsembleMethods_Boosting_local.html)
++ 2_6_SupportVectorMachines
 
 ## Regression Sessions
 
