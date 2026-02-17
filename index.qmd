@@ -45,7 +45,7 @@ Last updated: `r Sys.Date()`
 
 ## 2026-02-11 Session
 
-+ Boosting methods.
++ Boosting methods. And we began the discussion of *Support Vector Machines*.
 
 ## 2026-02-10 Session
 
