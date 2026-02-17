@@ -39,9 +39,16 @@ Last updated: `r Sys.Date()`
 <!-- ![](fig/QR.png){height=300px} ![ ](fig/CorredorSahariano.jpeg){height=275px} -->
 <!-- ![](fig/QR.png){height=300px} ![ ](fig/quetzal.png){height=275px} -->
 <!-- ![](fig/QR.png){height=300px} [![ ](fig/urutau.jpg){height=275px}](https://www.dropbox.com/scl/fi/saacenp52dwwkcg1o7etj/p900-0398-DSCN7254.MOV?rlkey=xji5hgcrxmudbqxt22c7716aa&dl=0) -->
-![](fig/QR.png){height=300px} ![ ](fig/Cuco.JPG){height=275px}
+<!-- ![](fig/QR.png){height=300px} ![ ](fig/Cuco.JPG){height=275px} -->
+<!-- haveldas -->
+![](fig/QR.png){height=300px} ![ ](fig/estonia.jpeg){height=275px}
+
 
 # Sessions
+
+## 2026-02-17 Session
+
++ [The Kaggle competition for Assignment 1 has launched.](https://www.kaggle.com/competitions/intro-to-ml-classification-challenge/overview) 
 
 ## 2026-02-11 Session
 
@@ -223,7 +230,8 @@ docker run -it --rm -p 8888:8888 -v "$($PWD.Path):/wd" mlmiin/mlmiin:2026V01
 + [2_3_KNN_Validation](./pages/sessions/2_3_KNN_Validation/2_3_KNN_Validation_local.html)
 + [2_4_Decision_Trees](./pages/sessions/2_4_Decision_Trees/2_4_Decision_Trees_local.html)
 + [2_5_EnsembleMethods and Boosting](./pages/sessions/2_5_EnsembleMethods_Boosting/2_5_EnsembleMethods_Boosting_local.html)
-+ 2_6_SupportVectorMachines
++ [2_6_SupportVectorMachines](./pages/sessions/2_6_SupportVectorMachines/2_6_SupportVectorMachines_local.html)
+
 
 ## Regression Sessions
 
