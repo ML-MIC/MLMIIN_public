@@ -41,14 +41,21 @@ Last updated: `r Sys.Date()`
 <!-- ![](fig/QR.png){height=300px} [![ ](fig/urutau.jpg){height=275px}](https://www.dropbox.com/scl/fi/saacenp52dwwkcg1o7etj/p900-0398-DSCN7254.MOV?rlkey=xji5hgcrxmudbqxt22c7716aa&dl=0) -->
 <!-- ![](fig/QR.png){height=300px} ![ ](fig/Cuco.JPG){height=275px} -->
 <!-- haveldas -->
-![](fig/QR.png){height=300px} ![ ](fig/estonia.jpeg){height=275px}
+<!-- ![](fig/QR.png){height=300px} ![ ](fig/estonia.jpeg){height=275px} -->
+![](fig/QR.png){height=300px} ![ ](fig/kidepo_kobo.jpg){height=275px}
 
 
 # Sessions
 
+## 2026-02-18 Session
+
++ <div style="color:red;font-weight:bold">Code for sessions 3_1 and 3_2 has been updated.</div>Make sure to git pull before resuming work. If you already made a local copy for 3_1, we suggest you make a second one from the updated version, to avoid any issues with the changes.
+
 ## 2026-02-17 Session
 
 + [The Kaggle competition for Assignment 1 has launched.](https://www.kaggle.com/competitions/intro-to-ml-classification-challenge/overview) 
+
++ Today we saw the (beutiful) *Kernel Trick* for SVM, our last classifier, and started with Linear Regression models.
 
 ## 2026-02-11 Session
 
@@ -235,8 +242,8 @@ docker run -it --rm -p 8888:8888 -v "$($PWD.Path):/wd" mlmiin/mlmiin:2026V01
 
 ## Regression Sessions
 
-+ 3_1_LinearRegression
-+ 3_2_FeatureSelection_Regularization
++ [3_1_LinearRegression](./pages/sessions/3_1_LinearRegression/3_1_LinearRegression_local.html))
++ [3_2_FeatureSelection_Regularization](./pages/sessions/3_2_FeatureSelection_Regularization/3_2_FeatureSelection_Regularization_local.html)
 + 3_3_Beyond_Linear_Models
 + 3_4_NeuralNetworks
 
