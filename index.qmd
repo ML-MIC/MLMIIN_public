@@ -42,16 +42,22 @@ Last updated: `r Sys.Date()`
 <!-- ![](fig/QR.png){height=300px} ![ ](fig/Cuco.JPG){height=275px} -->
 <!-- haveldas -->
 <!-- ![](fig/QR.png){height=300px} ![ ](fig/estonia.jpeg){height=275px} -->
-![](fig/QR.png){height=300px} ![ ](fig/kidepo_kobo.jpg){height=275px}
+<!-- ![](fig/QR.png){height=300px} ![ ](fig/kidepo_kobo.jpg){height=275px} -->
+![](fig/QR.png){height=300px} ![ ](fig/gallocanta.JPG){height=275px}
 
 
 # Sessions
 
-## 2026-02-18 Session
+## 2026-02-24 Session (3h)
 
++ Kaggle competition **public** results: [original](https://www.kaggle.com/competitions/intro-to-ml-classification-challenge/overview) and [clone](https://www.kaggle.com/competitions/intro-to-ml-classification-challenge-v-2)
+
+## 2026-02-18 Session (3h)
+
++ Today we finished the discussion of Linear Regression and we started talking about regularization and feature selection methods.
 + <div style="color:red;font-weight:bold">Code for sessions 3_1 and 3_2 has been updated.</div>Make sure to git pull before resuming work. If you already made a local copy for 3_1, we suggest you make a second one from the updated version, to avoid any issues with the changes.
 
-## 2026-02-17 Session
+## 2026-02-17 Session (3h)
 
 + [The Kaggle competition for Assignment 1 has launched.](https://www.kaggle.com/competitions/intro-to-ml-classification-challenge/overview) 
 
