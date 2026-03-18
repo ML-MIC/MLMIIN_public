@@ -48,6 +48,8 @@ Last updated: `r Sys.Date()`
 ![](fig/QR.png){height=300px} ![ ](fig/surniaUlula.png){height=300px}
 
 
+Check if it is working
+
 # Sessions
 
 ## 2026-03-11 Session
