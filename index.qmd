@@ -48,9 +48,12 @@ Last updated: `r Sys.Date()`
 ![](fig/QR.png){height=300px} ![ ](fig/surniaUlula.png){height=300px}
 
 
-Check if it is working
 
 # Sessions
+
+## 2026-03-17 Session
+
+`Today we finished the 4_1 Introduction to forecasting and began the discussion of stationarity in 4_2.
 
 ## 2026-03-11 Session
 
