@@ -45,15 +45,18 @@ Last updated: `r Sys.Date()`
 <!-- ![](fig/QR.png){height=300px} ![ ](fig/kidepo_kobo.jpg){height=275px} -->
 <!-- ![](fig/QR.png){height=300px} ![ ](fig/gallocanta.JPG){height=275px} -->
 <!-- ![](fig/QR.png){height=300px} ![ ](fig/orchid.png){height=275px} -->
-![](fig/QR.png){height=300px} ![ ](fig/surniaUlula.png){height=300px}
+<!-- ![](fig/QR.png){height=300px} ![ ](fig/surniaUlula.png){height=300px} -->
+![](fig/QR.png){height=300px} ![ ](fig/leopard.JPG){height=300px}
 
 
 
 # Sessions
 
+## 2026-03-18 Session
+
 ## 2026-03-17 Session
 
-`Today we finished the 4_1 Introduction to forecasting and began the discussion of stationarity in 4_2.
++ Today we finished the 4_1 Introduction to forecasting and began the discussion of stationarity in 4_2.
 
 ## 2026-03-11 Session
 
