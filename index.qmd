@@ -46,13 +46,20 @@ Last updated: `r Sys.Date()`
 <!-- ![](fig/QR.png){height=300px} ![ ](fig/gallocanta.JPG){height=275px} -->
 <!-- ![](fig/QR.png){height=300px} ![ ](fig/orchid.png){height=275px} -->
 <!-- ![](fig/QR.png){height=300px} ![ ](fig/surniaUlula.png){height=300px} -->
-![](fig/QR.png){height=300px} ![ ](fig/leopard.JPG){height=300px}
+<!-- ![](fig/QR.png){height=300px} ![ ](fig/leopard.JPG){height=300px} -->
+![](fig/QR.png){height=300px} ![ ](fig/OrquideaMuñeca.png){height=300px}
 
 
 
 # Sessions
 
+## 2026-03-24 Session
+
++ Today we start the discussion of baseline models (4.3). The Arima session 4.4 has aldo been uploaded, albeit in a provisional version, since we will be updating it in the next sessions.
+
 ## 2026-03-18 Session
+
++ We ended the stationarity discussion.
 
 ## 2026-03-17 Session
 
