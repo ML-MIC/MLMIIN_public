@@ -286,7 +286,7 @@ docker run -it --rm -p 8888:8888 -v "$($PWD.Path):/wd" mlmiin/mlmiin:2026V01
 
 ## Forecasting Sessions
 
-+ 4_1_Introduction_to_Forecasting
++ [4_1_Introduction_to_Forecasting](./pages/sessions/4_1_Introduction_to_Forecasting/4_1_Introduction_to_Forecasting_local.html)
 + 4_2_Stationarity
 + 4_3_Baseline_Arima
 + 4_4_Sarima_Other_Models
