@@ -47,15 +47,20 @@ Last updated: `r Sys.Date()`
 <!-- ![](fig/QR.png){height=300px} ![ ](fig/orchid.png){height=275px} -->
 <!-- ![](fig/QR.png){height=300px} ![ ](fig/surniaUlula.png){height=300px} -->
 <!-- ![](fig/QR.png){height=300px} ![ ](fig/leopard.JPG){height=300px} -->
-![](fig/QR.png){height=300px} ![ ](fig/OrquideaMuñeca.png){height=300px}
+<!-- ![](fig/QR.png){height=300px} ![ ](fig/OrquideaMuñeca.png){height=300px} -->
+![](fig/QR.png){height=300px} ![ ](fig/Nutria.png){height=300px}
 
 
 
 # Sessions
 
+## 2026-03-25 Session
+
++ The Arima session 4.4 has been update to a (more) complete version.
+
 ## 2026-03-24 Session
 
-+ Today we start the discussion of baseline models (4.3). The Arima session 4.4 has aldo been uploaded, albeit in a provisional version, since we will be updating it in the next sessions.
++ Today we start the discussion of baseline models (4.3). The Arima session 4.4 has also been uploaded, albeit in a provisional version, since we will be updating it in the next sessions.
 
 ## 2026-03-18 Session
 
@@ -288,8 +293,8 @@ docker run -it --rm -p 8888:8888 -v "$($PWD.Path):/wd" mlmiin/mlmiin:2026V01
 
 + [4_1_Introduction_to_Forecasting](./pages/sessions/4_1_Introduction_to_Forecasting/4_1_Introduction_to_Forecasting_local.html)
 + [4_2_Stationarity](./pages/sessions/4_2_Stationarity/4_2_Stationarity_local.html)
-+ [4_3_Baseline_Arima](./pages/sessions/4_3_Baseline/4_3_Baseline.html)
-+ 4_4_Sarima_Other_Models
++ [4_3_Baseline](./pages/sessions/4_3_Baseline/4_3_Baseline.html)
++ [4_4_Arima](./pages/sessions/4_4_Arima/4_4_Arima.html)
 + 4_5_Forecasting_Exogenous_Prophet
 
 ## Unsupervised Learning Sessions
