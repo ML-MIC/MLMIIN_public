@@ -57,6 +57,7 @@ Last updated: `r Sys.Date()`
 ## 2026-03-25 Session
 
 + The Arima session 4.4 has been update to a (more) complete version.
++ The assignment for the forecasting session will be available before this weekend. We will notify you when it is. Keep in mind that some of the requirements for the assignment will be covered in the first session after the Easter break.
 
 ## 2026-03-24 Session
 
