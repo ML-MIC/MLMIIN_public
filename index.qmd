@@ -48,11 +48,16 @@ Last updated: `r Sys.Date()`
 <!-- ![](fig/QR.png){height=300px} ![ ](fig/surniaUlula.png){height=300px} -->
 <!-- ![](fig/QR.png){height=300px} ![ ](fig/leopard.JPG){height=300px} -->
 <!-- ![](fig/QR.png){height=300px} ![ ](fig/OrquideaMuñeca.png){height=300px} -->
-![](fig/QR.png){height=300px} ![ ](fig/pigargo.jpeg){height=250px}
+<!-- ![](fig/QR.png){height=300px} ![ ](fig/pigargo.jpeg){height=250px} -->
+![](fig/QR.png){height=300px} ![ ](fig/LagopodoCanada.jpg){height=250px}
 
 
 
 # Sessions
+
+## 2026-04-08 Session
+
++ Added a link to last year's sessions code.
 
 ## 2026-04-07 Session
 
@@ -309,6 +314,7 @@ docker run -it --rm -p 8888:8888 -v "$($PWD.Path):/wd" mlmiin/mlmiin:2026V01
 + 5_3_Density_Estimation
 
 
+## [Link to 2025 Sessions](https://fsansegundo.github.io/MLMIC25_public/)
 
 
 # References
