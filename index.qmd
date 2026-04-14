@@ -49,11 +49,16 @@ Last updated: `r Sys.Date()`
 <!-- ![](fig/QR.png){height=300px} ![ ](fig/leopard.JPG){height=300px} -->
 <!-- ![](fig/QR.png){height=300px} ![ ](fig/OrquideaMuñeca.png){height=300px} -->
 <!-- ![](fig/QR.png){height=300px} ![ ](fig/pigargo.jpeg){height=250px} -->
-![](fig/QR.png){height=300px} ![ ](fig/LagopodoCanada.jpg){height=150px}
+<!-- ![](fig/QR.png){height=300px} ![ ](fig/LagopodoCanada.jpg){height=150px} -->
+![](fig/QR.png){height=300px} ![ ](fig/CercetaCarretona.JPG){height=150px}
 
 
 
 # Sessions
+
+## 2026-04-14 Session
+
++ First Unsupervised Learning session.
 
 ## 2026-04-08 Session
 
