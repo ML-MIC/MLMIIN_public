@@ -314,7 +314,7 @@ docker run -it --rm -p 8888:8888 -v "$($PWD.Path):/wd" mlmiin/mlmiin:2026V01
 
 ## Unsupervised Learning Sessions
 
-+ 5_1_Unsupervised_PCA
++ [5_1_Unsupervised_PCA](./pages/sessions/5_1_Unsupervised_PCA/5_1_PCA_local.html)
 + 5_2_Unsupervised_Clustering
 + 5_3_Density_Estimation
 
