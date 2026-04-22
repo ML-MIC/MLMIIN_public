@@ -50,15 +50,28 @@ Last updated: `r Sys.Date()`
 <!-- ![](fig/QR.png){height=300px} ![ ](fig/OrquideaMuñeca.png){height=300px} -->
 <!-- ![](fig/QR.png){height=300px} ![ ](fig/pigargo.jpeg){height=250px} -->
 <!-- ![](fig/QR.png){height=300px} ![ ](fig/LagopodoCanada.jpg){height=150px} -->
-![](fig/QR.png){height=300px} ![ ](fig/CercetaCarretona.JPG){height=300px}
-
+<!-- ![](fig/QR.png){height=300px} ![ ](fig/CercetaCarretona.JPG){height=300px} -->
+<!-- ![](fig/QR.png){height=300px} ![ ](fig/weaver.JPG){height=300px} -->
+![](fig/QR.png){height=300px} ![ ](fig/Puffin.JPG){height=300px}
 
 
 # Sessions
 
+## 2026-04-22 Session
+
++ Solving the 2025 Final Exam.
+
+## 2026-04-21 Session
+
++ Final Unsupervised Learning session. 
+
+## 2026-04-15 Session
+
++ Unsupervised Learning session: hierarchical clustering. 
+
 ## 2026-04-14 Session
 
-+ First Unsupervised Learning session.
++ First Unsupervised Learning session: PCA and first cluster ideas.
 
 ## 2026-04-08 Session
 
@@ -314,9 +327,9 @@ docker run -it --rm -p 8888:8888 -v "$($PWD.Path):/wd" mlmiin/mlmiin:2026V01
 
 ## Unsupervised Learning Sessions
 
-+ [5_1_Unsupervised_PCA](./pages/sessions/5_1_Unsupervised_PCA/5_1_PCA_local.html)
-+ 5_2_Unsupervised_Clustering
-+ 5_3_Density_Estimation
++ [5_1_PCA](./pages/sessions/5_1_Unsupervised_PCA/5_1_PCA_local.html)
++ [5_2_Clustering](./pages/sessions/5_2_Clustering/5_2_Clustering_local.html)
++ [5_3_Density_Estimation](./pages/sessions/5_3_Density_Estimation/5_3_Density_Estimation.html)
 
 
 ## [Link to 2025 Sessions](https://fsansegundo.github.io/MLMIC25_public/)
